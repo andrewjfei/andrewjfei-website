@@ -1,0 +1,106 @@
+/* ----------------------------------------- HEADER ----------------------------------------- */
+
+.background {
+  height: 100vh;
+  background: black;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/images/white-wall-akl-uni.jpg');
+  background-size: cover;
+  position: relative;
+  background-attachment: scroll;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+}
+
+/* ----------------------------------------- HERO TEXT ----------------------------------------- */
+
+.hero-text {
+  color: #f1f1f1;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 20px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.hero-text:before,
+.hero-text:after {
+  background-color: #f1f1f1;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 5%;
+}
+
+.hero-text:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.hero-text:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  border: solid 2px #f1f1f1;
+  background-color: transparent;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 90%;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #cc9900;
+  border-color: #cc9900;
+}
+
+.social-icons-list {
+  display: flex;
+  justify-content: space-between;
+  /*border: solid 1px red;*/
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  left: 40%;
+  position: relative;
+}
+
+.social-icons {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.icon {
+  color: #f1f1f1;
+  opacity: 50%;
+  font-size: 30px;
+  transition: 0.5s ease;
+}
+
+.icon:hover {
+  opacity: 100%;
+}
+
+.bottom-container {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}

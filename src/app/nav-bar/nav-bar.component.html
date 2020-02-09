@@ -1,0 +1,15 @@
+<div class="header">
+  <ul class="nav-bar-list">
+    <ng-container *ngFor="let item of navBarItems; let i = index">
+      <li class="nav-bar-item link">
+        <a href="#">
+          <h3>{{item}}</h3>
+        </a>
+      </li>
+      <li class="nav-bar-item middot" *ngIf="i < navBarItems.length - 1">&middot;</li>
+    </ng-container>
+  </ul>
+  <a class="brand-name" href="#">
+    <h1>ANDREW J FEI</h1>
+  </a>
+</div>

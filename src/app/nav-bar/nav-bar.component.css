@@ -1,0 +1,82 @@
+/* ----------------------------------------- NAV BAR ----------------------------------------- */
+
+/*
+This class makes sure that the title is in the center and that the nav bar has from the top
+of the screen.
+*/
+.header {
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+/* --------------------------------------- NAV BAR LIST --------------------------------------- */
+
+/*
+Make sure that the list of navigation links are on the left of the nav bar and not the center.
+*/
+.nav-bar-list {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+/*
+Every list item should be inline with margin on both sides.
+*/
+.nav-bar-item {
+  display: inline-block;
+  opacity: 50%;
+  transition: 0.5s ease;
+  color: #f1f1f1;
+  margin: 0px 5px;
+}
+
+.nav-bar-item:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.nav-bar-item > a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.nav-bar-item > a > h3 {
+  font-size: 100%;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/*
+This class refers to the dot symbol in between the navigation links.
+*/
+.middot {
+  font-size: 150%;
+}
+
+.middot:hover {
+  cursor: default;
+  opacity: 50%;
+}
+
+/* --------------------------------------- NAV BAR TITLE -------------------------------------- */
+
+.brand-name {
+  display: inline-block;
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.brand-name:hover {
+  cursor: pointer;
+  border: none;
+  text-underline: none;
+}
+
+.brand-name > h1 {
+  font-weight: 400;
+  font-size: 180%;
+  letter-spacing: 1px;
+}
