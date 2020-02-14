@@ -1,0 +1,15 @@
+.about-section {
+  height: 40vh;
+  background: black;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/images/omana-park-bench-akl-black-and-white.jpg');
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.button-row {
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  left: 10%;
+}

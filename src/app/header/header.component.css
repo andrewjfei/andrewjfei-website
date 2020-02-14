@@ -3,7 +3,7 @@
 .background {
   height: 100vh;
   background: black;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/images/white-wall-akl-uni.jpg');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/images/white-wall-akl-uni.jpg');
   background-size: cover;
   position: relative;
   background-attachment: scroll;

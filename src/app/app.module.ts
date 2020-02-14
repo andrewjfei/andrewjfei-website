@@ -11,6 +11,10 @@ import { StoreComponent } from './store/store.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
+import { HeadingComponent } from './favourites/heading/heading.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
+import { FooterComponent } from './footer/footer.component';
+import { TrademarkComponent } from './footer/trademark/trademark.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { AboutComponent } from './about/about.component';
     StoreComponent,
     GalleryComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    HeadingComponent,
+    BackToTopComponent,
+    FooterComponent,
+    TrademarkComponent
   ],
     imports: [
         BrowserModule,

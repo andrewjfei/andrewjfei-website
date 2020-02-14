@@ -7,3 +7,25 @@
 *, html, body {
   font-family: 'Raleway', sans-serif;
 }
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  border: solid 2px #f1f1f1;
+  background-color: transparent;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 90%;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #cc9900;
+  border-color: #cc9900;
+}

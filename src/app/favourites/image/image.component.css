@@ -1,0 +1,18 @@
+/* ----------------------------------------- GRID CONTAINER ----------------------------------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+/* ----------------------------------------- GRID ITEM ----------------------------------------- */
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item > img {
+  width: 100%;
+}

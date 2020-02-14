@@ -1,0 +1,16 @@
+.trademark-container {
+  text-align: center;
+  background-color: black;
+  /*border: 1px solid red;*/
+}
+
+.trademark-container p {
+  color: #f1f1f1;
+  margin: 0;
+  padding: 5px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-size: 80%;
+}
+
+
