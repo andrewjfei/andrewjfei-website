@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ImageComponent implements OnInit {
   @Input() favouriteImages = []
 
+
   constructor() { }
 
   ngOnInit() {

@@ -1,15 +1,26 @@
 <div class="footer-section">
-  <div class="logo-container">
-    <svg class="logo" width="100px" height="100px" viewBox="0 0 703 703" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
-    <g transform="matrix(1,0,0,1,-2560.82,-471.739)">
+  <div class="row">
+    <div class="logo-container">
+      <svg class="logo" width="50px" height="50px" viewBox="0 0 703 703" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+      <g transform="matrix(1,0,0,1,-2560.82,-471.739)">
         <g transform="matrix(2.67663,0,0,2.67663,-3072.72,-3332.01)">
-            <path d="M2367.22,1683.61L2167.51,1683.61L2182.93,1652.82L2313.8,1652.82L2258.41,1542.05L2258.45,1542.05L2235.98,1497.18L2235.97,1497.16L2235.97,1497.16L2216.94,1459.16L2235.97,1421.1L2367.22,1683.61Z" style="fill:rgb(241,241,241);"/>
+          <path d="M2367.22,1683.61L2167.51,1683.61L2182.93,1652.82L2313.8,1652.82L2258.41,1542.05L2258.45,1542.05L2235.98,1497.18L2235.97,1497.16L2235.97,1497.16L2216.94,1459.16L2235.97,1421.1L2367.22,1683.61Z" style="fill:rgb(241,241,241);"/>
         </g>
-      <g transform="matrix(2.67663,0,0,2.67663,-3072.72,-3332.01)">
-            <path d="M2204.56,1483.92L2223.59,1521.92L2194.13,1580.84L2252.96,1580.84L2268.38,1611.63L2178.74,1611.63L2158.14,1652.82L2158.14,1652.82L2142.73,1683.61L2104.72,1683.61L2204.56,1483.92Z" style="fill:rgb(241,241,241);"/>
+        <g transform="matrix(2.67663,0,0,2.67663,-3072.72,-3332.01)">
+          <path d="M2204.56,1483.92L2223.59,1521.92L2194.13,1580.84L2252.96,1580.84L2268.38,1611.63L2178.74,1611.63L2158.14,1652.82L2158.14,1652.82L2142.73,1683.61L2104.72,1683.61L2204.56,1483.92Z" style="fill:rgb(241,241,241);"/>
         </g>
-    </g>
-</svg>
+      </g>
+    </svg>
+    </div>
+    <div class="social-media-container">
+      <ul class="social-icons-list">
+        <li class= "social-icons" *ngFor="let item of socialMedia">
+          <a href="#">
+            <ion-icon class="icon" name="logo-{{item}}"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 <app-trademark></app-trademark>

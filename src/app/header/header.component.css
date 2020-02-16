@@ -3,10 +3,10 @@
 .background {
   height: 100vh;
   background: black;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/images/white-wall-akl-uni.jpg');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/images/mercer-bay-loop.jpg');
   background-size: cover;
   position: relative;
-  background-attachment: scroll;
+  /*background-position: 0px -50px;*/
 }
 
 .center {
@@ -55,22 +55,6 @@
   margin-bottom: 20px;
 }
 
-.button {
-  border: solid 2px #f1f1f1;
-  background-color: transparent;
-  color: #f1f1f1;
-  padding: 10px 20px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 90%;
-  transition: 0.3s ease;
-}
-
-.button:hover {
-  background-color: #cc9900;
-  border-color: #cc9900;
-}
-
 .social-icons-list {
   display: flex;
   justify-content: space-between;
@@ -89,9 +73,10 @@
 
 .icon {
   color: #f1f1f1;
-  opacity: 50%;
+  opacity: 60%;
   font-size: 30px;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .icon:hover {
@@ -103,4 +88,16 @@
   bottom: 10px;
   text-align: center;
   width: 100%;
+}
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .background {
+    height: 60vh;
+    background-position: 0px -50px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
 }

@@ -4,10 +4,21 @@
 This class makes sure that the title is in the center and that the nav bar has from the top
 of the screen.
 */
-.header {
+.nav-bar {
   text-align: center;
   position: relative;
-  top: 25px;
+  padding: 25px 0;
+  z-index: 10;
+  transition: 0.3s ease-in;
+}
+
+/* ----------------------------------------- STICKY NAV BAR ----------------------------------------- */
+
+.sticky-nav-bar {
+  background-color: black;
+  /*padding-top: 100px;*/
+  position: fixed;
+  width: 100%;
 }
 
 /* --------------------------------------- NAV BAR LIST --------------------------------------- */
@@ -19,6 +30,7 @@ Make sure that the list of navigation links are on the left of the nav bar and n
   display: inline-block;
   position: absolute;
   left: 0;
+  margin-bottom: 0;
 }
 
 /*
@@ -79,4 +91,23 @@ This class refers to the dot symbol in between the navigation links.
   font-weight: 400;
   font-size: 180%;
   letter-spacing: 1px;
+}
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .brand-name {
+    margin-top: 8px;
+  }
+
+  .brand-name > h1 {
+    font-size: 150%;
+  }
+
+  .nav-bar-item {
+    margin: 0px 3px;
+  }
+
+  .nav-bar-item > a > h3 {
+    font-size: 80%;
+  }
 }

@@ -15,6 +15,9 @@ import { HeadingComponent } from './favourites/heading/heading.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { FooterComponent } from './footer/footer.component';
 import { TrademarkComponent } from './footer/trademark/trademark.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -30,12 +33,23 @@ import { TrademarkComponent } from './footer/trademark/trademark.component';
     HeadingComponent,
     BackToTopComponent,
     FooterComponent,
-    TrademarkComponent
+    TrademarkComponent,
+    ComingSoonComponent,
+    HomeComponent
   ],
     imports: [
-        BrowserModule,
-        IonicModule
+      BrowserModule,
+      IonicModule,
+      RouterModule.forRoot([
+        { path: 'home', component: HomeComponent },
+        { path: 'store', component: StoreComponent },
+        { path: 'gallery', component: GalleryComponent },
+        { path: 'projects', component: ProjectsComponent },
+        { path: 'about', component: AboutComponent },
+        { path: '', redirectTo: '/home', pathMatch: 'full' }
+      ])
     ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,34 @@
+.coming-soon-section {
+  height:90vh;
+  background-color: #101010;
+  text-align: center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+
+.row {
+  width: 80%;
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.coming-soon-text {
+  color: #f1f1f1;
+  opacity: 50%;
+  transition: 0.3s ease;
+}
+
+.coming-soon-text:hover {
+  color: #9f811d;
+  opacity: 100%;
+}
+
+app-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

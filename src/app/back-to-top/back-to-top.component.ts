@@ -12,4 +12,11 @@ export class BackToTopComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleBackToTopPress() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
 }
