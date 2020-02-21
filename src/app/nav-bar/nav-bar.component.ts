@@ -11,9 +11,20 @@ export class NavBarComponent implements OnInit {
   cartItems = [];
   navBarItems = ['store', 'gallery', 'projects', 'about', `cart (${this.cartItems.length})`];
 
+  isMenuOpen = false;
+  innerWidth;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  handleMenuButton() {
+    this.isMenuOpen = !this.isMenuOpen;
+    this.isMenuOpen ?
+      (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'inline-block' :
+      (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
   }
 
   @HostListener('window:scroll')
@@ -37,6 +48,22 @@ export class NavBarComponent implements OnInit {
         console.log('Navigation has failed!');
       }
     });
+  }
+
+  @HostListener('window:resize', ['$event'])
+
+  onResize(event) {
+    if (this.innerWidth > 1060 && window.innerWidth <= 1060 && this.isMenuOpen === true) {
+      this.isMenuOpen = false;
+    }
+
+    if (window.innerWidth > 1060) {
+      (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'inline-block';
+      this.innerWidth = window.innerWidth;
+    } else if (window.innerWidth <= 1060 && this.innerWidth > 1060) {
+      (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
+      this.innerWidth = window.innerWidth;
+    }
   }
 
 }

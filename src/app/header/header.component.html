@@ -6,13 +6,15 @@
       <div class="row button-row">
         <button class="button">ENQUIRE NOW</button>
       </div>
-      <ul class="social-icons-list">
-        <li class= "social-icons" *ngFor="let item of socialMedia">
-          <a href="#">
-            <ion-icon class="icon" name="logo-{{item}}"></ion-icon>
-          </a>
-        </li>
-      </ul>
+      <div class="social-icons-container">
+        <ul class="social-icons-list">
+          <li class= "social-icons" *ngFor="let item of socialMedia">
+            <a href="#">
+              <ion-icon class="icon" name="logo-{{item}}"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="bottom-container">

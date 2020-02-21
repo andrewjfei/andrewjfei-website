@@ -10,7 +10,7 @@
 
 .button-row {
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 80%;
   left: 10%;
 }
@@ -20,5 +20,13 @@
   .about-section {
     height: 30vh;
     background-position: 0px 370px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .about-section {
+    height: 20vh;
+    background-size: 130%;
+    background-position: right bottom;
   }
 }

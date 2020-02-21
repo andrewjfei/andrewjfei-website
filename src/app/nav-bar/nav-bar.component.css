@@ -72,6 +72,32 @@ This class refers to the dot symbol in between the navigation links.
   opacity: 50%;
 }
 
+.menu-button {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  margin-top: 6px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+.menu-icon {
+  color: #f1f1f1;
+  font-size: 30px;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.menu-icon:hover {
+  opacity: 1.0;
+}
+
 /* --------------------------------------- NAV BAR TITLE -------------------------------------- */
 
 .brand-name {
@@ -109,5 +135,51 @@ This class refers to the dot symbol in between the navigation links.
 
   .nav-bar-item > a > h3 {
     font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .nav-bar-list {
+    display: none;
+    margin-top: 20px;
+    position: relative;
+    float: left;
+  }
+
+  .nav-bar-item {
+    display: block;
+    text-align: left;
+    padding: 5px 0px;
+  }
+
+  .middot {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-block;
+  }
+
+  .brand-name {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .menu-button {
+    margin-left: 40px;
+    margin-top: 8px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  .brand-name > h1 {
+    font-size: 110%;
+  }
+
+  .nav-bar-item > a > h3 {
+    font-size: 60%;
   }
 }

@@ -36,3 +36,10 @@
     font-size: 80%;
   }
 }
+
+@media screen and (max-width: 690px) {
+  .back-to-top-section label {
+    font-size: 70%;
+    letter-spacing: 1px;
+  }
+}

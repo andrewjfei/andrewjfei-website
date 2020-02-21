@@ -14,4 +14,10 @@
   font-size: 75%;
 }
 
+@media screen and (max-width: 690px) {
+  .trademark-container p {
+    font-size: 60%;
+  }
+}
+
 

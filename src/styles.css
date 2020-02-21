@@ -11,6 +11,14 @@
   }
 }
 
+@media screen and (max-width: 690px) {
+  .button {
+    font-size: 60% !important;
+    font-weight: 500 !important;
+    border-width: 1.5px !important;
+  }
+}
+
 *, html, body {
   font-family: 'Raleway', sans-serif;
 }
