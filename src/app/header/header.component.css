@@ -25,7 +25,7 @@
   font-size: 20px;
   overflow: hidden;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 1.0rem;
 }
 
 .hero-text:before,
@@ -52,7 +52,7 @@
 .button-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.0rem;
 }
 
 .social-icons-list {
@@ -95,6 +95,11 @@
   .background {
     height: 60vh;
     background-position: 0px -50px;
+  }
+
+  .social-icons-list {
+    width: 25%;
+    left: 37.5%;
   }
 
   .icon {

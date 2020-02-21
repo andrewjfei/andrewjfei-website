@@ -4,6 +4,13 @@
 
 @import "~@ionic/angular/css/core.css";
 
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .button {
+    font-size: 80% !important;
+  }
+}
+
 *, html, body {
   font-family: 'Raleway', sans-serif;
 }
@@ -28,4 +35,8 @@
 .button:hover {
   background-color: #9f811d;
   border-color: #9f811d;
+}
+
+.button:focus {
+  outline: none;
 }

@@ -86,3 +86,14 @@
   left: 0.5em;
   margin-right: -50%;
 }
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .name {
+    font-size: 110%;
+  }
+
+  .country-label {
+    font-size: 75%;
+  }
+}
