@@ -19,6 +19,15 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .button {
+    font-size: 50% !important;
+    font-weight: 500 !important;
+    padding: 8px 14px !important;
+    border-width: 1.0px !important;
+  }
+}
+
 *, html, body {
   font-family: 'Raleway', sans-serif;
 }
