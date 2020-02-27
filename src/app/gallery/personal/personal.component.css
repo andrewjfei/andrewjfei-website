@@ -1,0 +1,56 @@
+/* ----------------------------------------- GRID CONTAINER ----------------------------------------- */
+
+.grid-container {
+  margin: 5px;
+}
+
+/* ----------------------------------------- GRID ITEM ----------------------------------------- */
+
+.grid-item {
+  width: 20%;
+  /*border: 1px solid red;*/
+  display: inline-block;
+  padding: 5px;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-item > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1060px) {
+  .grid-item {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid-item {
+    width: 100%;
+  }
+}
+
+/* ----------------------------------------- IMAGE POP UP ----------------------------------------- */
+
+.img-pop-up-background {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 20%;
+  text-align: center;
+}
+
+.img-pop-up-container {
+  background-color: rgb(153, 153, 153);
+  height: 80%;
+  width: 60%;
+  display: inline-block;
+}
+
+.img-pop-up {
+  height: 200px;
+}

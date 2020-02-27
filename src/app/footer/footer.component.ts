@@ -7,7 +7,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  socialMedia = ['instagram', 'facebook', 'twitter'];
+  socialMedia = [
+    {name: 'instagram', url: 'https://www.instagram.com/andrewjfei/'},
+    {name: 'facebook', url: 'https://www.facebook.com/andrewjfei/'},
+    {name: 'twitter', url: 'https://www.twitter.com/andrewjfei/'}
+  ];
 
   constructor() { }
 

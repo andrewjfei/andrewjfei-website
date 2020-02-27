@@ -1,0 +1,115 @@
+/* ----------------------------------------- GRID CONTAINER ----------------------------------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+/* ----------------------------------------- GRID ITEM ----------------------------------------- */
+
+.grid-item {
+  text-align: center;
+  position: relative;
+}
+
+.grid-item > img {
+  width: 100%;
+}
+
+.grid-item:hover .hover-info {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.hover-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 10%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0%;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.info {
+  display: inline-block;
+  /*border: red solid 1px;*/
+  padding-top: 15px;
+  width: 80%;
+}
+
+.name, .country-label {
+  color: #f1f1f1;
+}
+
+.name {
+  font-size: 150%;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.country-label {
+  color: #f1f1f1;
+  font-weight: 300;
+  overflow: hidden;
+  text-align: center;
+  /*border: red solid 1px;*/
+  width: 100%;
+  font-size: 80%;
+}
+
+.country-label:before,
+.country-label:after {
+  background-color: #f1f1f1;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  margin-bottom: 4px;
+  width: 10%;
+}
+
+.country-label:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.country-label:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .name {
+    font-size: 110%;
+  }
+
+  .country-label {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .name {
+    font-size: 100%;
+  }
+
+  .country-label {
+    font-size: 70%;
+  }
+}

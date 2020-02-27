@@ -1,0 +1,38 @@
+.about-section {
+  height: 40vh;
+  background: black;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../assets/images/omana-park-bench-akl-black-and-white.jpg');
+  background-size: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-position: 0px 270px;
+}
+
+.button-row {
+  position: absolute;
+  top: 40%;
+  width: 80%;
+  left: 10%;
+}
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .about-section {
+    height: 30vh;
+    background-position: 0px 370px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .about-section {
+    height: 20vh;
+    background-size: 135%;
+    background-position: right bottom;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-section {
+    background-size: 180%;
+  }
+}

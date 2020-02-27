@@ -17,8 +17,8 @@
     <div class="social-media-container">
       <ul class="social-icons-list">
         <li class= "social-icons" *ngFor="let item of socialMedia">
-          <a href="#">
-            <ion-icon class="icon" name="logo-{{item}}"></ion-icon>
+          <a href="{{item.url}}">
+            <ion-icon class="icon" name="logo-{{item.name}}"></ion-icon>
           </a>
         </li>
       </ul>
