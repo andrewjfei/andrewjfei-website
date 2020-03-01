@@ -23,6 +23,8 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
 import { NgMasonryGridModule } from 'ng-masonry-grid';
 import { EventsComponent } from './gallery/events/events.component';
 import { PersonalComponent } from './gallery/personal/personal.component';
+import { AdminComponent } from './admin/admin.component';
+import { AuthenticateComponent } from './admin/authenticate/authenticate.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { PersonalComponent } from './gallery/personal/personal.component';
     HomeComponent,
     AboutMeComponent,
     EventsComponent,
-    PersonalComponent
+    PersonalComponent,
+    AdminComponent,
+    AuthenticateComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +58,7 @@ import { PersonalComponent } from './gallery/personal/personal.component';
       {path: 'gallery', component: GalleryComponent},
       {path: 'projects', component: ProjectsComponent},
       {path: 'about', component: AboutComponent},
+      {path: 'admin', component: AboutComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}
     ]),
     NgMasonryGridModule
