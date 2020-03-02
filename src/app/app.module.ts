@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
@@ -59,6 +61,8 @@ import { EventsConfigurationComponent } from './admin/manage/events-configuratio
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    DragDropModule,
     IonicModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},

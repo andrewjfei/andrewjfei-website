@@ -1,11 +1,14 @@
-<div class="grid-container">
-  <a class="grid-item" href="#" *ngFor="let img of images">
-    <img src="{{img.url}}">
-    <div class="hover-info">
-      <div class="info">
-        <h2 class="name">{{img.name.toUpperCase()}}</h2>
-        <label class="country-label">{{img.country.toUpperCase()}}</label>
-      </div>
-    </div>
-  </a>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movieName of Movies" cdkDrag>{{movieName}}</div>
 </div>
+<!--<div class="grid-container">-->
+<!--  <a class="grid-item" href="#" *ngFor="let img of images">-->
+<!--    <img src="{{img.url}}">-->
+<!--    <div class="hover-info">-->
+<!--      <div class="info">-->
+<!--        <h2 class="name">{{img.name.toUpperCase()}}</h2>-->
+<!--        <label class="country-label">{{img.country.toUpperCase()}}</label>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </a>-->
+<!--</div>-->
