@@ -58,7 +58,7 @@ import { AuthenticateComponent } from './admin/authenticate/authenticate.compone
       {path: 'gallery', component: GalleryComponent},
       {path: 'projects', component: ProjectsComponent},
       {path: 'about', component: AboutComponent},
-      {path: 'admin', component: AboutComponent},
+      {path: 'admin', component: AdminComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}
     ]),
     NgMasonryGridModule
