@@ -20,7 +20,6 @@ function createRouter(db) {
   // });
 
   router.get('/images', (req, res, next) => {
-    console.log('Hi')
     db.query(
       'SELECT * FROM personalImages;',
       (error, result) => {

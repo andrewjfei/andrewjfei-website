@@ -29,7 +29,7 @@ export class PersonalConfigurationComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<string[]>) {
-    moveItemInArray(this.Movies, event.previousIndex, event.currentIndex);
+    moveItemInArray(this.images, event.previousIndex, event.currentIndex);
   }
 
   getPersonalImages() {

@@ -32,6 +32,8 @@ import { ManageComponent } from './admin/manage/manage.component';
 import { AdminNavBarComponent } from './admin-nav-bar/admin-nav-bar.component';
 import { PersonalConfigurationComponent } from './admin/manage/personal-configuration/personal-configuration.component';
 import { EventsConfigurationComponent } from './admin/manage/events-configuration/events-configuration.component';
+import { DragDropDirective } from './admin/manage/drag-drop.directive';
+import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { EventsConfigurationComponent } from './admin/manage/events-configuratio
     ManageComponent,
     AdminNavBarComponent,
     PersonalConfigurationComponent,
-    EventsConfigurationComponent
+    EventsConfigurationComponent,
+    DragDropDirective,
+    UploadFilesComponent
   ],
   imports: [
     BrowserModule,
