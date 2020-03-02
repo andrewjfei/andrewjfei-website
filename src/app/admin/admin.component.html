@@ -1,1 +1,2 @@
-<app-authenticate *ngIf="!isAdmin"></app-authenticate>
+<app-authenticate *ngIf="!isAdmin" (isAdminChange)="handleAdminChange()"></app-authenticate>
+<app-manage *ngIf="isAdmin"></app-manage>

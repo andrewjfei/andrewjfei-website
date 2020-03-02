@@ -1,0 +1,220 @@
+/* ----------------------------------------- NAV BAR ----------------------------------------- */
+
+/* Navigation bar height. */
+.background {
+  height: 100px;
+}
+
+/*
+This class makes sure that the title is in the center and that the nav bar has from the top
+of the screen.
+*/
+.nav-bar {
+  text-align: center;
+  position: relative;
+  padding: 25px 0;
+  z-index: 10;
+  transition: 1.0s ease;
+}
+
+/* ----------------------------------------- STICKY NAV BAR ----------------------------------------- */
+
+.sticky-nav-bar {
+  background-color: black;
+  /*padding-top: 100px;*/
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* --------------------------------------- NAV BAR LIST --------------------------------------- */
+
+/*
+Make sure that the list of navigation links are on the left of the nav bar and not the center.
+*/
+.nav-bar-list {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 7px;
+  /*border: 1px solid red;*/
+}
+
+/*
+Every list item should be inline with margin on both sides.
+*/
+.nav-bar-item {
+  display: inline-block;
+  opacity: 50%;
+  transition: 0.5s ease;
+  color: #f1f1f1;
+  margin: 0px 5px;
+}
+
+.nav-bar-item:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.nav-bar-item > a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.nav-bar-item > a > h3 {
+  font-size: 100%;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/*
+This class refers to the dot symbol in between the navigation links.
+*/
+.middot {
+  font-size: 150%;
+  /*border: 1px solid red;*/
+  vertical-align: middle;
+}
+
+.middot:hover {
+  cursor: default;
+  opacity: 50%;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  margin-top: 6px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+.menu-icon {
+  color: #f1f1f1;
+  font-size: 30px;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.menu-icon:hover {
+  opacity: 1.0;
+}
+
+/* --------------------------------------- NAV BAR TITLE -------------------------------------- */
+
+.brand-name {
+  display: inline-block;
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.brand-name:hover {
+  cursor: pointer;
+  border: none;
+  text-underline: none;
+}
+
+.brand-name > h1 {
+  font-weight: 400;
+  font-size: 180%;
+  letter-spacing: 1px;
+}
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .brand-name {
+    margin-top: 8px;
+  }
+
+  .brand-name > h1 {
+    font-size: 150%;
+  }
+
+  .nav-bar-list {
+    margin-top: 5px;
+  }
+
+  .nav-bar-item {
+    margin: 0px 3px;
+  }
+
+  .nav-bar-item > a > h3 {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .nav-bar-list {
+    display: none;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+  }
+
+  .nav-bar-item {
+    display: block;
+    text-align: left;
+    padding: 5px 0px;
+  }
+
+  .middot {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-block;
+  }
+
+  .brand-name {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .menu-button {
+    margin-left: 40px;
+    margin-top: 8px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  .brand-name > h1 {
+    font-size: 110%;
+  }
+
+  .nav-bar-item > a > h3 {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .menu-button {
+    margin-left: 20px;
+  }
+
+  .nav-bar-list {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+
+  .nav-bar-item {
+    display: block;
+    text-align: left;
+    padding: 2px 0px;
+  }
+
+  .middot {
+    display: none;
+  }
+}

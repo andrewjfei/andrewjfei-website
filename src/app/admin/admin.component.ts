@@ -9,13 +9,14 @@ export class AdminComponent implements OnInit {
 
   isAdmin = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  checkCredentials() {
-
+  handleAdminChange() {
+    this.isAdmin = true;
   }
 
 }

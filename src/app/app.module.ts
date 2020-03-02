@@ -25,6 +25,10 @@ import { EventsComponent } from './gallery/events/events.component';
 import { PersonalComponent } from './gallery/personal/personal.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthenticateComponent } from './admin/authenticate/authenticate.component';
+import { ManageComponent } from './admin/manage/manage.component';
+import { AdminNavBarComponent } from './admin-nav-bar/admin-nav-bar.component';
+import { PersonalConfigurationComponent } from './admin/manage/personal-configuration/personal-configuration.component';
+import { EventsConfigurationComponent } from './admin/manage/events-configuration/events-configuration.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { AuthenticateComponent } from './admin/authenticate/authenticate.compone
     EventsComponent,
     PersonalComponent,
     AdminComponent,
-    AuthenticateComponent
+    AuthenticateComponent,
+    ManageComponent,
+    AdminNavBarComponent,
+    PersonalConfigurationComponent,
+    EventsConfigurationComponent
   ],
   imports: [
     BrowserModule,
