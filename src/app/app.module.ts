@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
@@ -22,7 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 
-import { NgMasonryGridModule } from 'ng-masonry-grid';
+// import { NgMasonryGridModule } from 'ng-masonry-grid';
 import { EventsComponent } from './gallery/events/events.component';
 import { PersonalComponent } from './gallery/personal/personal.component';
 import { AdminComponent } from './admin/admin.component';
@@ -63,6 +64,7 @@ import { EventsConfigurationComponent } from './admin/manage/events-configuratio
     BrowserModule,
     BrowserAnimationsModule,
     DragDropModule,
+    HttpClientModule,
     IonicModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
@@ -73,7 +75,7 @@ import { EventsConfigurationComponent } from './admin/manage/events-configuratio
       {path: 'admin', component: AdminComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}
     ]),
-    NgMasonryGridModule
+    // NgMasonryGridModule
   ],
   exports: [RouterModule],
   providers: [],
