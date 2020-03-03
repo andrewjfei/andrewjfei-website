@@ -1,1 +1,10 @@
-<p>events works!</p>
+<ngx-masonry
+  class="masonry-container"
+  [useImagesLoaded]="true"
+  [options]="{
+  transitionDuration: '0.8s'
+  }">
+  <div ngxMasonryItem class="masonry-item" *ngFor="let image of images">
+    <img class="masonry-image" src="{{image}}"/>
+  </div>
+</ngx-masonry>

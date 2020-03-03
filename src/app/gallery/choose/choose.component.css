@@ -1,0 +1,17 @@
+/*.background {*/
+/*  height: 80vh;*/
+/*}*/
+
+.row {
+  /*border: solid red 1px;*/
+  width: 80%;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: 300px 0px;
+  margin-left: 10%;
+}
+
+.button {
+  display: inline-block;
+}

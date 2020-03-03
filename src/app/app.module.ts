@@ -36,6 +36,7 @@ import { PersonalConfigurationComponent } from './admin/manage/personal-configur
 import { EventsConfigurationComponent } from './admin/manage/events-configuration/events-configuration.component';
 import { DragDropDirective } from './admin/manage/drag-drop.directive';
 import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.component';
+import { ChooseComponent } from './gallery/choose/choose.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.c
     PersonalConfigurationComponent,
     EventsConfigurationComponent,
     DragDropDirective,
-    UploadFilesComponent
+    UploadFilesComponent,
+    ChooseComponent
   ],
   imports: [
     BrowserModule,

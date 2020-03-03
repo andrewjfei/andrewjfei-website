@@ -9,6 +9,8 @@ import {Router} from '@angular/router';
 export class GalleryComponent implements OnInit {
 
   images = [];
+  isPersonalOpen = false;
+  isEventsOpen = false;
   selectedImage;
 
   constructor(private router: Router) {
@@ -17,6 +19,18 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  handlePersonalButton() {
+    this.isPersonalOpen = true;
+    this.isEventsOpen = false;
+    console.log('personal clicked');
+  }
+
+  handleEventsButton() {
+    this.isEventsOpen = true;
+    this.isPersonalOpen = false;
+    console.log('events clicked');
   }
 
 }

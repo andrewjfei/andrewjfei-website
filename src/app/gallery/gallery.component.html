@@ -1,5 +1,11 @@
 <div class="background">
   <app-nav-bar></app-nav-bar>
-  <app-personal></app-personal>
+  <app-choose
+    *ngIf="!isPersonalOpen && !isEventsOpen"
+    (handleEventsButton)="handleEventsButton()"
+    (handlePersonalButton)="handlePersonalButton()"
+  ></app-choose>
+  <app-events *ngIf="isEventsOpen"></app-events>
+  <app-personal *ngIf="isPersonalOpen"></app-personal>
   <app-footer></app-footer>
 </div>
