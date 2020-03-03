@@ -8,8 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
-  cartItems = [];
-  navBarItems = ['store', 'gallery', 'projects', 'about', `cart (${this.cartItems.length})`];
+  navBarItems = ['store', 'gallery', 'projects', 'about', 'contact'];
 
   isMenuOpen = false;
   innerWidth;

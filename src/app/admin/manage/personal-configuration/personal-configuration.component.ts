@@ -11,17 +11,6 @@ export class PersonalConfigurationComponent implements OnInit {
 
   images = [];
 
-  Movies = [
-    'Blade Runner',
-    'Cool Hand Luke',
-    'Heat',
-    'Juice',
-    'The Far Side of the World',
-    'Morituri',
-    'Napoleon Dynamite',
-    'Pulp Fiction'
-  ];
-
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
