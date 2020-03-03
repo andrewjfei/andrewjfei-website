@@ -1,4 +1,4 @@
-<div class="upload-file-container" (click)="fileInput.click()" appDragDrop (onFileDropped)="uploadFile($event)">
+<div class="upload-file-container" (click)="fileInput.click()" appDragDrop (onFileDropped)="isPersonal ? uploadFile($event) : uploadEventFile($event)">
   <input hidden type="file" #fileInput (change)="uploadFile($event)">
 </div>
 <!--<div  class="files-list" *ngFor="let file of files;let i=index">-->

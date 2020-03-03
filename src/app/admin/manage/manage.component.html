@@ -1,4 +1,5 @@
 <div class="background">
-  <app-admin-nav-bar [navBarStatus]="true"></app-admin-nav-bar>
-  <app-personal-configuration></app-personal-configuration>
+  <app-admin-nav-bar [navBarStatus]="true" (handleClick)="handleChange()"></app-admin-nav-bar>
+  <app-personal-configuration *ngIf="isPersonal"></app-personal-configuration>
+  <app-events-configuration *ngIf="!isPersonal"></app-events-configuration>
 </div>

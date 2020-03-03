@@ -17,7 +17,7 @@ export class EventsComponent implements OnInit {
   }
 
   getPersonalImages() {
-    this.http.get('http://localhost:8080/get-images').subscribe((data: any[]) => {
+    this.http.get('http://localhost:8080/events/get-images').subscribe((data: any[]) => {
       console.log(data);
       this.images = data;
       console.log(this.images);

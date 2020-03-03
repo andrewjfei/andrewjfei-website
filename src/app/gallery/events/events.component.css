@@ -1,0 +1,12 @@
+.masonry-container {
+  margin: 10px;
+}
+
+.masonry-item {
+  width: 20%;
+  padding: 10px;
+}
+
+.masonry-image {
+  width: 100%;
+}

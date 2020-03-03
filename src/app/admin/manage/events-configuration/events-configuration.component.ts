@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-events-configuration',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsConfigurationComponent implements OnInit {
 
-  constructor() { }
+  images = [];
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.getPersonalImages();
+  }
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.images, event.previousIndex, event.currentIndex);
+  }
+
+  getPersonalImages() {
+    this.http.get('http://localhost:8080/events/get-images').subscribe((data: any[]) => {
+      console.log(data);
+      this.images = data;
+      console.log(this.images);
+    });
   }
 
 }

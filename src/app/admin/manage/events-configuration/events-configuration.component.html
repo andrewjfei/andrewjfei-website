@@ -1,1 +1,7 @@
-<p>events-configuration works!</p>
+<div cdkDropList class="image-list" (cdkDropListDropped)="drop($event)">
+  <div class="image-text" *ngFor="let image of images" cdkDrag>
+    {{image}}
+    <img  class="preview-image" *cdkDragPreview [src]="image" [alt]="image">
+  </div>
+</div>
+<app-upload-files [isPersonal]="false"></app-upload-files>

@@ -1,4 +1,4 @@
-import {Component, HostListener, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import {Router} from '@angular/router';
 })
 export class AdminNavBarComponent implements OnInit {
   @Input() navBarStatus;
+  @Output() handleClick = new EventEmitter<boolean>();
 
   navBarItems = ['personal', 'events'];
 
@@ -64,6 +65,10 @@ export class AdminNavBarComponent implements OnInit {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
       this.innerWidth = window.innerWidth;
     }
+  }
+
+  handleButtonClick() {
+    this.handleClick.emit();
   }
 
 }

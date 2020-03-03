@@ -9,10 +9,8 @@
     <ul class="nav-bar-list">
       <ng-container *ngIf="navBarStatus">
         <ng-container *ngFor="let item of navBarItems; let i = index">
-          <li class="nav-bar-item link">
-            <a href="{{item}}">
+          <li class="nav-bar-item link" (click)="handleButtonClick()">
               <h3>{{item.toUpperCase()}}</h3>
-            </a>
           </li>
           <li class="nav-bar-item middot" *ngIf="i < navBarItems.length - 1">&middot;</li>
         </ng-container>

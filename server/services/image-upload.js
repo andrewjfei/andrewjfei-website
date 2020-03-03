@@ -22,7 +22,7 @@ const fileFilter = (req, file, cb) => {
   }
 }
 
-const upload = multer({
+module.exports.personalUpload = multer({
   fileFilter,
   storage: multerS3({
     acl: 'public-read',
@@ -37,4 +37,17 @@ const upload = multer({
   })
 });
 
-module.exports = upload;
+module.exports.eventsUpload = multer({
+  fileFilter,
+  storage: multerS3({
+    acl: 'public-read',
+    s3: s3,
+    bucket: 'andrewjfei-events',
+    metadata: function (req, file, cb) {
+      cb(null, {fieldName: 'hi'}); // Set metadata of uploaded files.
+    },
+    key: function (req, file, cb) {
+      cb(null, 'EVENTS' + Date.now().toString()) // Name of file.
+    }
+  })
+});
