@@ -8,8 +8,7 @@
   text-align: center;
   display: inline-flex;
   justify-content: space-evenly;
-  margin: 300px 0px;
-  margin-left: 10%;
+  margin: 300px 0px 300px 10%;
 }
 
 .button {
