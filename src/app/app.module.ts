@@ -37,6 +37,7 @@ import { EventsConfigurationComponent } from './admin/manage/events-configuratio
 import { DragDropDirective } from './admin/manage/drag-drop.directive';
 import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.component';
 import { ChooseComponent } from './gallery/choose/choose.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { ChooseComponent } from './gallery/choose/choose.component';
     EventsConfigurationComponent,
     DragDropDirective,
     UploadFilesComponent,
-    ChooseComponent
+    ChooseComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -83,6 +85,7 @@ import { ChooseComponent } from './gallery/choose/choose.component';
       {path: 'gallery', component: GalleryComponent},
       {path: 'projects', component: ProjectsComponent},
       {path: 'about', component: AboutComponent},
+      {path: 'contact', component: ContactComponent},
       {path: 'admin', component: AdminComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}
     ]),
