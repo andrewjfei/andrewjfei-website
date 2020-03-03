@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "andrewjfei"
+  "defaultProject": "andrewjfei",
+  "cli": {
+    "analytics": false
+  }
 }
