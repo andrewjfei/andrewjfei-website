@@ -1,13 +1,13 @@
 <div cdkDropList class="image-list" (cdkDropListDropped)="drop($event)">
   <div class="image-text" *ngFor="let image of images" cdkDrag>
-    {{image.imageName}}
-    <img  class="preview-image" *cdkDragPreview [src]="image.image" [alt]="image.imageName">
+    {{image}}
+    <img  class="preview-image" *cdkDragPreview [src]="image" [alt]="image.imageName">
   </div>
 </div>
 <app-upload-files></app-upload-files>
 <!--<div class="grid-container">-->
 <!--  <a class="grid-item" href="#" *ngFor="let img of images">-->
-<!--    <img src="{{img.url}}">-->
+<!--    <img services="{{img.url}}">-->
 <!--    <div class="hover-info">-->
 <!--      <div class="info">-->
 <!--        <h2 class="name">{{img.name.toUpperCase()}}</h2>-->

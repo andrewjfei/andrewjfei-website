@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
@@ -23,7 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 
-// import { NgMasonryGridModule } from 'ng-masonry-grid';
+import { NgxMasonryModule } from 'ngx-masonry';
 import { EventsComponent } from './gallery/events/events.component';
 import { PersonalComponent } from './gallery/personal/personal.component';
 import { AdminComponent } from './admin/admin.component';
@@ -70,6 +72,9 @@ import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.c
     DragDropModule,
     HttpClientModule,
     IonicModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxMasonryModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
       {path: 'store', component: StoreComponent},
@@ -79,7 +84,6 @@ import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.c
       {path: 'admin', component: AdminComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}
     ]),
-    // NgMasonryGridModule
   ],
   exports: [RouterModule],
   providers: [],
