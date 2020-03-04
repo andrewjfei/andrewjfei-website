@@ -9,8 +9,7 @@ import {Router} from '@angular/router';
 export class GalleryComponent implements OnInit {
 
   images = [];
-  isPersonalOpen = false;
-  isEventsOpen = false;
+  isPersonalOpen = true;
   selectedImage;
 
   constructor(private router: Router) {
@@ -23,14 +22,20 @@ export class GalleryComponent implements OnInit {
 
   handlePersonalButton() {
     this.isPersonalOpen = true;
-    this.isEventsOpen = false;
-    console.log('personal clicked');
+    const personalElement = document.querySelector('.personal');
+    const eventElement = document.querySelector('.events');
+    personalElement.classList.remove('close');
+    eventElement.classList.add('close');
+    console.log('complete personal');
   }
 
   handleEventsButton() {
-    this.isEventsOpen = true;
     this.isPersonalOpen = false;
-    console.log('events clicked');
+    const personalElement = document.querySelector('.personal');
+    const eventElement = document.querySelector('.events');
+    eventElement.classList.remove('close');
+    personalElement.classList.add('close');
+    console.log('complete events');
   }
 
 }

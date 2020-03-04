@@ -84,11 +84,47 @@ function listFiles(auth, result, folderId) {
     pageSize: 100,
     fields: 'nextPageToken, files(id, name)',
     q: `'${folderId}' in parents and trashed = false`
-  }, (err, res) => {
+  }, async function(err, res) {
     if (err) return console.log('The API returned an error: ' + err);
     const files = res.data.files;
-    result.send(files)
+
+
+    const requests = files.map(async file => {
+      return (await downloadFile(auth, file));
+    })
+
+    const imgData = await Promise.all(requests);
+    const jsonContent = JSON.stringify(imgData);
+
+    fs.writeFile("gallery-personal.json", jsonContent, 'utf8', function (err) {
+      if (err) {
+        console.log("An error occured while writing JSON Object to File.");
+        return console.log(err);
+      }
+
+      console.log("JSON file has been saved.");
+    });
   });
+}
+
+// Downloads the files in the Google Drive.
+async function downloadFile(auth, file) {
+  const drive = google.drive({version: 'v3', auth});
+  const dest = fs.createWriteStream(`../src/assets/images/personal/${file.name}`);
+  await drive.files.get({
+    fileId: file.id,
+    alt: 'media'
+  }, {responseType: 'stream'}, (err, res) => {
+    res.data
+      .on('end', function () {
+      })
+      .on('error', function (err) {
+        console.log('Error during download', err);
+      })
+      .pipe(dest)
+  })
+
+  return {'path': `../../assets/images/personal/${file.name}`};
 }
 
 

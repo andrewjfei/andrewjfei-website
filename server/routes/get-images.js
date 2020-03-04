@@ -5,14 +5,20 @@
  * Author: Andrew J Fei
  */
 
+const fs = require('fs');
 const express = require('express');
 const googleDriveAPI = require('../services/google-drive');
 const router = express.Router();
 
 module.exports.getPersonalImages = router.get('/personal/get-images', (req, res, next) => {
 
-  // Calls function in /services/google-drive.js that puts json data of the images in the specified folder to the API.
+  // // Calls function in /services/google-drive.js that puts json data of the images in the specified folder to the API.
   googleDriveAPI.getImages(res, googleDriveAPI.PERSONAL_FOLDER_ID);
+  console.log('Hi')
+  const contents = fs.readFileSync("gallery-personal.json");
+// Define to JSON type
+  res.send(contents)
+
 });
 
 module.exports.getEventImages = router.get('/events/get-images', (req, res, next) => {

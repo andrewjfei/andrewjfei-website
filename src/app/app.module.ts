@@ -36,7 +36,6 @@ import { PersonalConfigurationComponent } from './admin/manage/personal-configur
 import { EventsConfigurationComponent } from './admin/manage/events-configuration/events-configuration.component';
 import { DragDropDirective } from './admin/manage/drag-drop.directive';
 import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.component';
-import { ChooseComponent } from './gallery/choose/choose.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -67,7 +66,6 @@ import { ContactComponent } from './contact/contact.component';
     EventsConfigurationComponent,
     DragDropDirective,
     UploadFilesComponent,
-    ChooseComponent,
     ContactComponent
   ],
   imports: [

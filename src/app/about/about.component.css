@@ -1,0 +1,34 @@
+.about-section {
+  height: 90vh;
+  background-color: #101010;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: block;
+}
+
+.row {
+  width: 70%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  /*border: 1px solid red;*/
+  position: absolute;
+  top: 45%;
+  left: 15%;
+}
+
+.about-text {
+  color: #f1f1f1;
+  transition: 0.3s ease;
+  font-size: 100%;
+  text-align: center;
+}
+
+app-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

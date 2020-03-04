@@ -3,3 +3,36 @@
   position: relative;
 }
 
+.row {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  /*border: 1px solid red;*/
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-button {
+  border: none;
+  color: #f1f1f1;
+  background: none;
+  letter-spacing: 1px;
+  padding: 0.3rem 0.8rem;
+  transition: 0.5s ease;
+}
+
+.gallery-button:hover {
+  background-color: #f1f1f1;
+  color: #101010;
+}
+
+.selected {
+  background-color: #f1f1f1;
+  color: #101010;
+}
+
