@@ -13,14 +13,15 @@ export class EventsComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.getPersonalImages();
+    this.getEventImages();
   }
 
-  getPersonalImages() {
+  getEventImages() {
     this.http.get('http://localhost:8080/events/get-images').subscribe((data: any[]) => {
-      console.log(data);
-      this.images = data;
-      console.log(this.images);
+      data.map(img => {
+        img.url = `https://drive.google.com/uc?id=${img.id}`;
+        this.images.push(img);
+      });
     });
   }
 

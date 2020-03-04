@@ -47,9 +47,10 @@ export class PersonalComponent implements OnInit {
 
   getPersonalImages() {
     this.http.get('http://localhost:8080/personal/get-images').subscribe((data: any[]) => {
-      console.log(data);
-      this.images = data;
-      console.log(this.images);
+      data.map(img => {
+        img.url = `https://drive.google.com/uc?id=${img.id}`;
+        this.images.push(img);
+      });
     });
   }
 
