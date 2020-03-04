@@ -37,7 +37,7 @@ module.exports.getImages = (response, folderId) => {
 
 // Create an OAuth2 client with the given credentials, and then execute the
 // given callback function.
-authorize = (credentials, callback, response, folderId) => {
+function authorize(credentials, callback, response, folderId) {
   const {client_secret, client_id, redirect_uris} = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
     client_id, client_secret, redirect_uris[0]);
@@ -78,7 +78,7 @@ function getAccessToken(oAuth2Client, callback, result, folderId) {
 }
 
 // Lists the names and IDs of up to 100 files.
-listFiles = (auth, result, folderId) => {
+function listFiles(auth, result, folderId) {
   const drive = google.drive({version: 'v3', auth});
   drive.files.list({
     pageSize: 100,
@@ -88,6 +88,32 @@ listFiles = (auth, result, folderId) => {
     if (err) return console.log('The API returned an error: ' + err);
     const files = res.data.files;
     result.send(files)
+  });
+}
+
+
+// Uploads a file with a given name from the given path to the Google Drive.
+function storeFiles(auth) {
+  const drive = google.drive({version: 'v3', auth});
+  const fileMetadata = {
+    'name': 'escalator.jpeg', // Name of file.
+    parents: [EVENTS_FOLDER_ID]
+  };
+  const media = {
+    mimeType: 'image/jpeg',
+    body: fs.createReadStream('/Users/andrewjfei/Pictures/Personal/DSC02191.jpg') // Path of file.
+  };
+  drive.files.create({
+    resource: fileMetadata,
+    media: media,
+    fields: 'id'
+  }, function (err, file) {
+    if (err) {
+      // Handle error
+      console.error(err);
+    } else {
+      console.log('File Id: ', file.data.id);
+    }
   });
 }
 
