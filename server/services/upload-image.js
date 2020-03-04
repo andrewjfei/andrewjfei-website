@@ -3,8 +3,8 @@ const readline = require('readline');
 const {google} = require('googleapis');
 
 const SCOPES = ['https://www.googleapis.com/auth/drive'];
-const PERSONAL_FOLDER_ID = '1-piIGkcenE03W39feKFVMFjgAlAlaVXs';
-const EVENTS_FOLDER_ID = '11k4zZFIMEyFLggci0k90dLnJkmlZhJya';
+module.exports.PERSONAL_FOLDER_ID = '1-piIGkcenE03W39feKFVMFjgAlAlaVXs';
+module.exports.EVENTS_FOLDER_ID = '11k4zZFIMEyFLggci0k90dLnJkmlZhJya';
 
 const TOKEN_PATH = 'token.json';
 
