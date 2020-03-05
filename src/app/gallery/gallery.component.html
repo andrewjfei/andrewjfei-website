@@ -10,7 +10,7 @@
       </button>
     </div>
   </div>
-  <app-personal></app-personal>
-<!--  <app-events></app-events>-->
+  <app-personal *ngIf="isPersonalOpen"></app-personal>
+  <app-events *ngIf="!isPersonalOpen"></app-events>
   <app-footer></app-footer>
 </div>

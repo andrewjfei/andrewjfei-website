@@ -22,20 +22,10 @@ export class GalleryComponent implements OnInit {
 
   handlePersonalButton() {
     this.isPersonalOpen = true;
-    const personalElement = document.querySelector('.personal');
-    const eventElement = document.querySelector('.events');
-    personalElement.classList.remove('close');
-    eventElement.classList.add('close');
-    console.log('complete personal');
   }
 
   handleEventsButton() {
     this.isPersonalOpen = false;
-    const personalElement = document.querySelector('.personal');
-    const eventElement = document.querySelector('.events');
-    eventElement.classList.remove('close');
-    personalElement.classList.add('close');
-    console.log('complete events');
   }
 
 }

@@ -25,34 +25,34 @@ const SCOPES = ['https://www.googleapis.com/auth/drive'];
 const TOKEN_PATH = 'token.json';
 
 // Checks the credentials of the user trying to access the Google Drive through the API.
-module.exports.getImages = (response, folderId) => {
+module.exports.getImages = (response, folderId, folder) => {
   fs.readFile('credentials.json', (err, content) => {
     if (err) return console.log('Error loading client secret file:', err);
 
     // Authorize a client with credentials, then call the Google Drive API.
-    authorize(JSON.parse(content), listFiles, response, folderId);
+    authorize(JSON.parse(content), listFiles, response, folderId, folder);
   });
 }
 
 
 // Create an OAuth2 client with the given credentials, and then execute the
 // given callback function.
-function authorize(credentials, callback, response, folderId) {
+function authorize(credentials, callback, response, folderId, folder) {
   const {client_secret, client_id, redirect_uris} = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
     client_id, client_secret, redirect_uris[0]);
 
   // Check if we have previously stored a token.
   fs.readFile(TOKEN_PATH, (err, token) => {
-    if (err) return getAccessToken(oAuth2Client, callback, response, folderId);
+    if (err) return getAccessToken(oAuth2Client, callback, response, folderId, folder);
     oAuth2Client.setCredentials(JSON.parse(token));
-    callback(oAuth2Client, response, folderId);
+    callback(oAuth2Client, response, folderId, folder);
   });
 }
 
 // Get and store new token after prompting for user authorization, and then
 // execute the given callback with the authorized OAuth2 client.
-function getAccessToken(oAuth2Client, callback, result, folderId) {
+function getAccessToken(oAuth2Client, callback, result, folderId, folder) {
   const authUrl = oAuth2Client.generateAuthUrl({
     access_type: 'offline',
     scope: SCOPES,
@@ -72,13 +72,13 @@ function getAccessToken(oAuth2Client, callback, result, folderId) {
         if (err) return console.error(err);
         console.log('Token stored to', TOKEN_PATH);
       });
-      callback(oAuth2Client, result, folderId);
+      callback(oAuth2Client, result, folderId, folder);
     });
   });
 }
 
 // Lists the names and IDs of up to 100 files.
-function listFiles(auth, result, folderId) {
+function listFiles(auth, result, folderId, folder) {
   const drive = google.drive({version: 'v3', auth});
   drive.files.list({
     pageSize: 100,
@@ -90,13 +90,13 @@ function listFiles(auth, result, folderId) {
 
 
     const requests = files.map(async file => {
-      return (await downloadFile(auth, file));
+      return (await downloadFile(auth, file, folder));
     })
 
     const imgData = await Promise.all(requests);
     const jsonContent = JSON.stringify(imgData);
 
-    fs.writeFile("gallery-personal.json", jsonContent, 'utf8', function (err) {
+    fs.writeFile(`gallery-${folder}.json`, jsonContent, 'utf8', function (err) {
       if (err) {
         console.log("An error occured while writing JSON Object to File.");
         return console.log(err);
@@ -108,25 +108,35 @@ function listFiles(auth, result, folderId) {
 }
 
 // Downloads the files in the Google Drive.
-async function downloadFile(auth, file) {
+async function downloadFile(auth, file, folder) {
   const drive = google.drive({version: 'v3', auth});
-  const dest = fs.createWriteStream(`../src/assets/images/personal/${file.name}`);
-  await drive.files.get({
-    fileId: file.id,
-    alt: 'media'
-  }, {responseType: 'stream'}, (err, res) => {
-    res.data
-      .on('end', function () {
-      })
-      .on('error', function (err) {
-        console.log('Error during download', err);
-      })
-      .pipe(dest)
-  })
+  const fileDest = `../src/assets/images/${folder}/${file.name}`;
 
-  return {'path': `../../assets/images/personal/${file.name}`};
+  if(fs.existsSync(fileDest)) {
+    console.log("The file exists.");
+
+    return {'path': `../../assets/images/${folder}/${file.name}`};
+
+    // return null;
+  } else {
+    const dest = fs.createWriteStream(fileDest);
+
+    await drive.files.get({
+      fileId: file.id,
+      alt: 'media'
+    }, {responseType: 'stream'}, (err, res) => {
+      res.data
+        .on('end', function () {
+        })
+        .on('error', function (err) {
+          console.log('Error during download', err);
+        })
+        .pipe(dest)
+    })
+
+    return {'path': `../../assets/images/${folder}/${file.name}`};
+  }
 }
-
 
 // Uploads a file with a given name from the given path to the Google Drive.
 function storeFiles(auth) {

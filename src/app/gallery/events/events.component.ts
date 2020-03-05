@@ -18,9 +18,8 @@ export class EventsComponent implements OnInit {
 
   getEventImages() {
     this.http.get('http://localhost:8080/events/get-images').subscribe((data: any[]) => {
-      data.map(img => {
-        img.url = `https://drive.google.com/uc?id=${img.id}`;
-        this.images.push(img);
+      data.map(obj => {
+        this.images.push(obj);
       });
     });
   }
