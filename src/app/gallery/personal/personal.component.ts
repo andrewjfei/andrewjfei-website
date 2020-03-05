@@ -47,6 +47,7 @@ export class PersonalComponent implements OnInit {
 
   getPersonalImages() {
     this.http.get('http://localhost:8080/personal/get-images').subscribe((data: any[]) => {
+      console.log(data)
       data.map(obj => {
         this.images.push(obj);
       });

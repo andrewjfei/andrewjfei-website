@@ -88,22 +88,39 @@ function listFiles(auth, result, folderId, folder) {
     if (err) return console.log('The API returned an error: ' + err);
     const files = res.data.files;
 
-
-    const requests = files.map(async file => {
-      return (await downloadFile(auth, file, folder));
+    const requests = await files.map(file => {
+      file.url = `https://drive.google.com/file/d/${file.id}/view`
+      return file;
     })
 
     const imgData = await Promise.all(requests);
     const jsonContent = JSON.stringify(imgData);
 
     fs.writeFile(`gallery-${folder}.json`, jsonContent, 'utf8', function (err) {
-      if (err) {
-        console.log("An error occured while writing JSON Object to File.");
-        return console.log(err);
-      }
+        if (err) {
+          console.log("An error occured while writing JSON Object to File.");
+          return console.log(err);
+        }
 
-      console.log("JSON file has been saved.");
-    });
+        console.log("JSON file has been saved.");
+      });
+
+
+    // const requests = files.map(async file => {
+    //   return (await downloadFile(auth, file, folder));
+    // })
+    //
+    // const imgData = await Promise.all(requests);
+    // const jsonContent = JSON.stringify(imgData);
+    //
+    // fs.writeFile(`gallery-${folder}.json`, jsonContent, 'utf8', function (err) {
+    //   if (err) {
+    //     console.log("An error occured while writing JSON Object to File.");
+    //     return console.log(err);
+    //   }
+    //
+    //   console.log("JSON file has been saved.");
+    // });
   });
 }
 
