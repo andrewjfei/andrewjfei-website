@@ -8,10 +8,12 @@
 const fs = require('fs');
 const express = require('express');
 const googleDriveAPI = require('../services/google-drive');
+const googleCloudAPI = require('../services/google-cloud-storage');
 const router = express.Router();
 
 module.exports.getPersonalImages = router.get('/personal/get-images', (req, res, next) => {
-  googleDriveAPI.getImages(res, googleDriveAPI.PERSONAL_FOLDER_ID, 'personal');
+  // googleDriveAPI.getImages(res, googleDriveAPI.PERSONAL_FOLDER_ID, 'personal');
+  googleCloudAPI().catch(console.error);
   const contents = fs.readFileSync("gallery-personal.json");
   // Define to JSON type
   res.send(contents)

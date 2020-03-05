@@ -46,9 +46,9 @@ export class PersonalComponent implements OnInit {
   }
 
   getPersonalImages() {
-    this.http.get('http://localhost:8080/personal/get-images').subscribe((data: any[]) => {
-      console.log(data)
-      data.map(obj => {
+    this.http.get('https://storage.googleapis.com/storage/v1/b/andrewjfei-gallery-personal/o').subscribe((data: any) => {
+      console.log(data.items);
+      data.items.map(obj => {
         this.images.push(obj);
       });
     });

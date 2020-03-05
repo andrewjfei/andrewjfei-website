@@ -89,7 +89,8 @@ function listFiles(auth, result, folderId, folder) {
     const files = res.data.files;
 
     const requests = await files.map(file => {
-      file.url = `https://drive.google.com/file/d/${file.id}/view`
+      // file.url = `https://drive.google.com/uc?id=${file.id}`
+      file.url = `https://drive.google.com/uc?export=view&id=${file.id}`
       return file;
     })
 
@@ -97,13 +98,13 @@ function listFiles(auth, result, folderId, folder) {
     const jsonContent = JSON.stringify(imgData);
 
     fs.writeFile(`gallery-${folder}.json`, jsonContent, 'utf8', function (err) {
-        if (err) {
-          console.log("An error occured while writing JSON Object to File.");
-          return console.log(err);
-        }
+      if (err) {
+        console.log("An error occured while writing JSON Object to File.");
+        return console.log(err);
+      }
 
-        console.log("JSON file has been saved.");
-      });
+      console.log("JSON file has been saved.");
+    });
 
 
     // const requests = files.map(async file => {
