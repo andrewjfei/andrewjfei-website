@@ -9,7 +9,9 @@ import {HttpClient} from '@angular/common/http';
 export class PersonalComponent implements OnInit {
 
   images = [];
-  selectedImage;
+  selectedImage = null;
+  lastImage = false;
+  firstImage = false;
 
   constructor(private http: HttpClient) {
 
@@ -52,6 +54,35 @@ export class PersonalComponent implements OnInit {
         this.images.push(obj);
       });
     });
+  }
+
+  handleImageClick(index) {
+    this.selectedImage = index;
+  }
+
+  nextImage() {
+    if (this.selectedImage === null || this.selectedImage === this.images.length - 1) {
+      return;
+    } else {
+      this.selectedImage = this.selectedImage + 1;
+    }
+  }
+
+  previousImage() {
+    if (this.selectedImage === null || this.selectedImage === 0) {
+      return;
+    } else {
+      this.selectedImage = this.selectedImage - 1;
+    }
+  }
+
+  clearSelectedImage() {
+    this.selectedImage = null;
+  }
+
+  handleImageChange() {
+    this.lastImage = this.selectedImage === this.images.length - 1 ? true : false;
+    this.firstImage = this.selectedImage === 0 ? true : false;
   }
 
 }

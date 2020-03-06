@@ -2,9 +2,21 @@
   class="masonry-container"
   [useImagesLoaded]="true"
   [options]="{
-  transitionDuration: '0.8s'
-  }">
-  <div ngxMasonryItem class="masonry-item" *ngFor="let image of images">
-    <img class="masonry-image" src="{{image.mediaLink}}"/>
+  transitionDuration: '0.8s',
+  horizontalOrder: 'true'
+  }"
+>
+  <div ngxMasonryItem class="masonry-item" *ngFor="let image of images, let i = index">
+    <img class="masonry-image" src="{{image.mediaLink}}" (click)="handleImageClick(i)"/>
   </div>
 </ngx-masonry>
+<app-image-view
+  *ngIf="selectedImage !== null"
+  [image]="images[selectedImage]"
+  [firstImage]="firstImage"
+  [lastImage]="lastImage"
+  (imageChange)="handleImageChange()"
+  (nextImage)="nextImage()"
+  (previousImage)="previousImage()"
+  (clearSelected)="clearSelectedImage()"
+></app-image-view>

@@ -10,3 +10,7 @@
 .masonry-image {
   width: 100%;
 }
+
+.masonry-image:hover {
+  cursor: pointer;
+}

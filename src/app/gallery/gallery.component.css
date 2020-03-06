@@ -15,6 +15,11 @@
   width: 20%;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+}
+
+.gallery-button:focus {
+  outline: none;
 }
 
 .gallery-button {

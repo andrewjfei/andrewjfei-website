@@ -1,0 +1,7 @@
+<div class="background" (click)="clearSelectedImage()">
+  <div class="image-container" (click)="$event.stopPropagation()">
+    <ion-icon *ngIf="!firstImage" class="icon arrow-back" name="ios-arrow-back" (click)="handleBackButton()"></ion-icon>
+    <img class="image" src="{{image.mediaLink}}"/>
+    <ion-icon *ngIf="!lastImage" class="icon arrow-forward" name="ios-arrow-forward" (click)="handleForwardButton()"></ion-icon>
+  </div>
+</div>
