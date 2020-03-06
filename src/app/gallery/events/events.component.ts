@@ -30,6 +30,7 @@ export class EventsComponent implements OnInit {
 
   handleImageClick(index) {
     this.selectedImage = index;
+    this.handleImageChange();
   }
 
   nextImage() {

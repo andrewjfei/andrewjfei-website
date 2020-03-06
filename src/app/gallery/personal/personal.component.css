@@ -7,10 +7,19 @@
   padding: 10px;
 }
 
+.img-container {
+  overflow: hidden;
+}
+
 .masonry-image {
   width: 100%;
+  transition: 0.5s ease;
+  user-select: none;
 }
 
 .masonry-image:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
+
+

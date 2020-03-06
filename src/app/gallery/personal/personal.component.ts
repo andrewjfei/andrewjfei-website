@@ -1,10 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {trigger, style, animate, transition} from '@angular/animations';
 
 @Component({
   selector: 'app-personal',
   templateUrl: './personal.component.html',
-  styleUrls: ['./personal.component.css']
+  styleUrls: ['./personal.component.css'],
+  animations: [
+    trigger('fade', [
+      transition('void => *', [
+        style({ opacity: 0.0 }),
+        animate(300, style({opacity: 1.0}))
+      ])
+    ])
+  ]
 })
 export class PersonalComponent implements OnInit {
 
@@ -14,33 +23,6 @@ export class PersonalComponent implements OnInit {
   firstImage = false;
 
   constructor(private http: HttpClient) {
-
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/pour.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-despair-1.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/mercer-bay-loop.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/tap-splash.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/twig.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-despair-2.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/ben-chen-city-night-1.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/twig.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-neon-flare-2.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/mercer-bay-loop.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/pour.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-despair-1.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-neon-flare-2.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/ben-chen-city-night-1.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/mercer-bay-loop.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-neon-flare-1.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/tap-splash.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-despair-3.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/tap-splash.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/twig.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-despair-1.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/ben-chen-city-night-1.jpg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/juj-despair-3.jpeg'});
-    // this.images.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/mercer-bay-loop.jpg'});
-    //
-    // this.selectedImage = this.images[0];
   }
 
   ngOnInit() {
@@ -58,6 +40,7 @@ export class PersonalComponent implements OnInit {
 
   handleImageClick(index) {
     this.selectedImage = index;
+    this.handleImageChange();
   }
 
   nextImage() {

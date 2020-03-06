@@ -7,11 +7,14 @@
   }"
 >
   <div ngxMasonryItem class="masonry-item" *ngFor="let image of images, let i = index">
-    <img class="masonry-image" src="{{image.mediaLink}}" (click)="handleImageClick(i)"/>
+    <div class="img-container">
+      <img class="masonry-image" src="{{image.mediaLink}}" (click)="handleImageClick(i)"/>
+    </div>
   </div>
 </ngx-masonry>
 <app-image-view
   *ngIf="selectedImage !== null"
+  @fade
   [image]="images[selectedImage]"
   [firstImage]="firstImage"
   [lastImage]="lastImage"
