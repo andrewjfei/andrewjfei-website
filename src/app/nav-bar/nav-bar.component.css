@@ -46,14 +46,14 @@ Every list item should be inline with margin on both sides.
 */
 .nav-bar-item {
   display: inline-block;
-  opacity: 50%;
+  opacity: 0.5;
   transition: 0.5s ease;
   color: #f1f1f1;
   margin: 0px 5px;
 }
 
 .nav-bar-item:hover {
-  opacity: 100%;
+  opacity: 1.0;
   cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ This class refers to the dot symbol in between the navigation links.
 
 .middot:hover {
   cursor: default;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .menu-button {
