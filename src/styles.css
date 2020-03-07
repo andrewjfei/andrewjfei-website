@@ -22,15 +22,17 @@
   background-color: transparent;
   color: #f1f1f1;
   padding: 10px 20px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 2px;
   font-size: 90%;
   transition: 0.3s ease;
 }
 
 .button:hover {
-  background-color: #9f811d;
-  border-color: #9f811d;
+  /*background-color: #9f811d;*/
+  /*border-color: #9f811d;*/
+  background-color: #f1f1f1;
+  color: #101010;
 }
 
 .button:focus {

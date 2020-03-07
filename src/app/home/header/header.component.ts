@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
     const navBarHeight = document.getElementById('navBar').offsetHeight;
 
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - (navBarHeight - 30);
+    const offsetPosition = elementPosition - (navBarHeight - 40);
 
     window.scrollTo({
       top: offsetPosition,

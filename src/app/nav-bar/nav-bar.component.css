@@ -1,7 +1,6 @@
 /* ----------------------------------------- NAV BAR ----------------------------------------- */
 
-/* Navigation bar height. */
-.background {
+.nav-bar-container {
   height: 100px;
 }
 
@@ -12,9 +11,11 @@ of the screen.
 .nav-bar {
   text-align: center;
   position: relative;
-  padding: 25px 0;
+  padding: 30px 0;
   z-index: 10;
   transition: 1.0s ease;
+  /*border: 1px solid red;*/
+
 }
 
 /* ----------------------------------------- STICKY NAV BAR ----------------------------------------- */
@@ -65,7 +66,7 @@ Every list item should be inline with margin on both sides.
 .nav-bar-item > a > h3 {
   font-size: 100%;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 /*
@@ -99,7 +100,7 @@ This class refers to the dot symbol in between the navigation links.
 
 .menu-icon {
   color: #f1f1f1;
-  font-size: 30px;
+  font-size: 250%;
   opacity: 0.5;
   transition: 0.3s ease;
 }
@@ -125,8 +126,9 @@ This class refers to the dot symbol in between the navigation links.
 
 .brand-name > h1 {
   font-weight: 400;
-  font-size: 180%;
-  letter-spacing: 1px;
+  font-size: 200%;
+  letter-spacing: 4px;
+  /*border: 1px red solid;*/
 }
 
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */
@@ -145,10 +147,6 @@ This class refers to the dot symbol in between the navigation links.
 
   .nav-bar-item {
     margin: 0px 3px;
-  }
-
-  .nav-bar-item > a > h3 {
-    font-size: 80%;
   }
 }
 
@@ -191,10 +189,6 @@ This class refers to the dot symbol in between the navigation links.
 
   .brand-name > h1 {
     font-size: 110%;
-  }
-
-  .nav-bar-item > a > h3 {
-    font-size: 60%;
   }
 }
 

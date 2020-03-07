@@ -1,20 +1,21 @@
-<div class="background">
-<nav class="nav-bar" id="navBar" (scroll)="onWindowScroll()">
-  <button class="menu-button" (click)="handleMenuButton()">
-    <ion-icon class="menu-icon" name="{{isMenuOpen ? 'ios-close' : 'ios-menu'}}"></ion-icon>
-  </button>
-  <a class="brand-name" href="home">
-    <h1>ANDREW J FEI</h1>
-  </a>
-  <ul class="nav-bar-list">
-    <ng-container *ngFor="let item of navBarItems; let i = index">
-      <li class="nav-bar-item link">
-        <a href="{{item}}">
-          <h3>{{item.toUpperCase()}}</h3>
-        </a>
-      </li>
-      <li class="nav-bar-item middot" *ngIf="i < navBarItems.length - 1">&middot;</li>
-    </ng-container>
-  </ul>
-</nav>
+<div class="nav-bar-container">
+  <nav class="nav-bar" id="navBar" (scroll)="onWindowScroll()">
+    <button class="menu-button" (click)="handleMenuButton()">
+      <ion-icon class="menu-icon" name="{{isMenuOpen ? 'ios-close' : 'ios-menu'}}"></ion-icon>
+    </button>
+    <a class="brand-name" href="home">
+      <h1>ANDREW J FEI</h1>
+    </a>
+    <ul class="nav-bar-list">
+      <ng-container *ngFor="let item of navBarItems; let i = index">
+        <li class="nav-bar-item link">
+          <a href="{{item}}">
+            <h3>{{item.toUpperCase()}}</h3>
+          </a>
+        </li>
+        <li class="nav-bar-item middot" *ngIf="i < navBarItems.length - 1">&middot;</li>
+      </ng-container>
+    </ul>
+  </nav>
 </div>
+
