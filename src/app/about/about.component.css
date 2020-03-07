@@ -25,6 +25,9 @@
   transition: 0.3s ease;
   font-size: 100%;
   text-align: center;
+  letter-spacing: 1px;
+  line-height: 150%;
+  /*text-transform: uppercase;*/
 }
 
 app-footer {
