@@ -9,6 +9,8 @@ export class ImageViewComponent implements OnInit {
   @Input() image;
   @Input() firstImage;
   @Input() lastImage;
+  @Input() imageIndex;
+  @Input() totalImages;
   @Output() nextImage: EventEmitter<any> = new EventEmitter();
   @Output() previousImage: EventEmitter<any> = new EventEmitter();
   @Output() clearSelected: EventEmitter<any> = new EventEmitter();

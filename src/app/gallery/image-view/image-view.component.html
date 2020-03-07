@@ -1,7 +1,10 @@
 <div class="background" (click)="clearSelectedImage()">
-  <div class="image-container" (click)="$event.stopPropagation()">
+  <div class="view-container" (click)="$event.stopPropagation()">
     <ion-icon *ngIf="!firstImage" class="icon arrow-back" name="ios-arrow-back" (click)="handleBackButton()"></ion-icon>
-    <img class="image" src="{{image.mediaLink}}"/>
+    <div class="image-container">
+      <img class="image" src="{{image.mediaLink}}"/>
+      <label class="image-number">{{imageIndex}}/{{totalImages}}</label>
+    </div>
     <ion-icon *ngIf="!lastImage" class="icon arrow-forward" name="ios-arrow-forward" (click)="handleForwardButton()"></ion-icon>
   </div>
 </div>
