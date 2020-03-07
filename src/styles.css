@@ -1,36 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Font Import */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap');
 
+/* Icon Import */
 @import "~@ionic/angular/css/core.css";
-
-/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
-@media screen and (max-width: 1385px) {
-  .button {
-    font-size: 80% !important;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .button {
-    font-size: 60% !important;
-    font-weight: 500 !important;
-    border-width: 1.5px !important;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .button {
-    font-size: 50% !important;
-    font-weight: 500 !important;
-    padding: 8px 14px !important;
-    border-width: 1.0px !important;
-  }
-}
 
 *, html, body {
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .button-row {
@@ -59,22 +37,26 @@
   outline: none;
 }
 
-/*!* width *!*/
-/*::-webkit-scrollbar {*/
-/*  width: 8px;*/
-/*}*/
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .button {
+    font-size: 80% !important;
+  }
+}
 
-/*::-webkit-scrollbar-thumb:window-inactive {*/
-/*  background: #f1b8aa;*/
-/*}*/
+@media screen and (max-width: 690px) {
+  .button {
+    font-size: 60% !important;
+    font-weight: 500 !important;
+    border-width: 1.5px !important;
+  }
+}
 
-/*!* Track *!*/
-/*::-webkit-scrollbar-track {*/
-/*  background: #101010;*/
-/*}*/
-
-/*!* Handle *!*/
-/*::-webkit-scrollbar-thumb {*/
-/*  background: #f1f1f1;*/
-/*}*/
-
+@media screen and (max-width: 550px) {
+  .button {
+    font-size: 50% !important;
+    font-weight: 500 !important;
+    padding: 8px 14px !important;
+    border-width: 1.0px !important;
+  }
+}
