@@ -27,8 +27,9 @@
   color: #f1f1f1;
   background: none;
   letter-spacing: 1px;
-  padding: 0.3rem 0.8rem;
+  padding: 10px 20px;
   transition: 0.5s ease;
+  font-size: 90%;
 }
 
 .gallery-button:hover {

@@ -16,6 +16,8 @@
   [image]="images[selectedImage]"
   [firstImage]="firstImage"
   [lastImage]="lastImage"
+  [imageIndex]="selectedImage + 1"
+  [totalImages]="images.length"
   (imageChange)="handleImageChange()"
   (nextImage)="nextImage()"
   (previousImage)="previousImage()"
