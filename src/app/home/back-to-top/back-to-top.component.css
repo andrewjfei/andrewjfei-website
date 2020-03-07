@@ -15,7 +15,7 @@
 
 .icon {
   color: #f1f1f1;
-  opacity: 50%;
+  opacity: 0.5;
   font-size: 30px;
   transition: 0.5s ease;
   display: block;
@@ -26,7 +26,7 @@
 }
 
 .icon:hover {
-  opacity: 100%;
+  opacity: 1.0;
   cursor: pointer;
 }
 

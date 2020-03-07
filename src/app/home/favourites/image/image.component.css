@@ -20,7 +20,7 @@
 
 .grid-item:hover .hover-info {
   visibility: visible;
-  opacity: 100%;
+  opacity: 1.0;
 }
 
 .hover-info {
@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  opacity: 0%;
+  opacity: 0.0;
   transition: visibility 0.3s, opacity 0.3s linear;
 }
 

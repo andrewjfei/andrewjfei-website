@@ -22,12 +22,12 @@
   stroke-linejoin: round;
   stroke-miterlimit: 2;
   fill: #f1f1f1;
-  opacity: 50%;
+  opacity: 0.5;
   transition: 0.2s ease;
 }
 
 .logo:hover {
-  opacity: 100%;
+  opacity: 1.0;
   cursor: pointer;
 }
 
@@ -64,12 +64,12 @@
 .icon {
   font-size: 30px;
   color: #f1f1f1 !important;
-  opacity: 50%;
+  opacity: 0.5;
   transition: 0.2s ease;
 }
 
 .icon:hover {
-  opacity: 100%;
+  opacity: 1.0;
 }
 
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */

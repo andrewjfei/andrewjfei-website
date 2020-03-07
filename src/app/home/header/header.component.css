@@ -79,14 +79,14 @@
 
 .icon {
   color: #f1f1f1;
-  opacity: 60%;
+  opacity: 0.6;
   font-size: 30px;
   transition: 0.5s ease;
   cursor: pointer;
 }
 
 .icon:hover {
-  opacity: 100%;
+  opacity: 1.0;
 }
 
 .bottom-container {

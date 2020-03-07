@@ -21,14 +21,16 @@
 
 .coming-soon-text {
   color: #f1f1f1;
-  opacity: 50%;
+  opacity: 0.5;
   transition: 0.3s ease;
-  font-size: 250%;
+  font-size: 230%;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .coming-soon-text:hover {
   color: #9f811d;
-  opacity: 100%;
+  opacity: 1.0;
 }
 
 app-footer {
