@@ -42,7 +42,6 @@
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */
 @media screen and (max-width: 1385px) {
   *, html, body {
-    font-family: 'Raleway', sans-serif;
     font-size: 11px;
   }
 
@@ -59,11 +58,12 @@
 /*  }*/
 /*}*/
 
-/*@media screen and (max-width: 550px) {*/
-/*  .button {*/
-/*    font-size: 50% !important;*/
-/*    font-weight: 500 !important;*/
-/*    padding: 8px 14px !important;*/
-/*    border-width: 1.0px !important;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 550px) {
+  *, html, body {
+    font-size: 9px;
+  }
+
+  .button {
+    font-weight: 600;
+  }
+}

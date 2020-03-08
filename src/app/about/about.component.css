@@ -36,8 +36,14 @@ app-footer {
   bottom: 0;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1060px) {
   .row {
     top: 40%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .row {
+    top: 35%;
   }
 }

@@ -41,16 +41,12 @@
 /*  }*/
 /*}*/
 
-/*@media screen and (max-width: 550px) {*/
-/*  .container {*/
-/*    padding: 40px 0px 10px 0px;*/
-/*  }*/
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 40px 0px 15px 0px;
+  }
 
-/*  .icon {*/
-/*    top: 15px*/
-/*  }*/
-
-/*  .back-to-top-section label {*/
-/*    font-size: 60%;*/
-/*  }*/
-/*}*/
+  .icon {
+    top: 15px;
+  }
+}

@@ -118,34 +118,22 @@
     background-size: 150%;
     background-position: center;
   }
+
+  .hero-text:before,
+  .hero-text:after {
+    display: none;
+  }
 }
 
-/*@media screen and (max-width: 690px) {*/
-/*  .hero-text {*/
-/*    font-size: 90%;*/
-/*  }*/
+@media screen and (max-width: 690px) {
+  .icon {
+    font-size: 20px;
+  }
+}
 
-/*  .social-icons-list {*/
-/*    width: 100px;*/
-/*  }*/
-
-/*  .icon {*/
-/*    font-size: 20px;*/
-/*  }*/
-/*}*/
-
-/*@media screen and (max-width: 550px) {*/
-/*  .background {*/
-/*    background-size: 250%;*/
-/*    background-position: center;*/
-/*  }*/
-
-/*  .hero-text {*/
-/*    font-size: 70%;*/
-/*    margin-bottom: 0.8rem;*/
-/*  }*/
-
-/*  .button-row {*/
-/*    margin-bottom: 0.8rem;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 550px) {
+  .background {
+    background-size: 250%;
+    background-position: center;
+  }
+}

@@ -88,7 +88,7 @@ This class refers to the dot symbol in between the navigation links.
   position: absolute;
   left: 0;
   margin-left: 40px;
-  margin-top: 6px;
+  margin-top: 5px;
   background-color: transparent;
   padding: 0;
   border: none;
@@ -168,23 +168,24 @@ This class refers to the dot symbol in between the navigation links.
 @media screen and (max-width: 690px) {
 }
 
-/*@media screen and (max-width: 550px) {*/
-/*  .menu-button {*/
-/*    margin-left: 20px;*/
-/*  }*/
+@media screen and (max-width: 550px) {
+  .menu-button {
+    margin-left: 20px;
+  }
 
-/*  .nav-bar-list {*/
-/*    padding-left: 20px;*/
-/*    margin-top: 5px;*/
-/*  }*/
+  .nav-bar-list {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
 
-/*  .nav-bar-item {*/
-/*    display: block;*/
-/*    text-align: left;*/
-/*    padding: 2px 0px;*/
-/*  }*/
+  .menu-button {
+    margin-top: 3px;
+  }
 
-/*  .middot {*/
-/*    display: none;*/
-/*  }*/
-/*}*/
+  .brand-name > h1 {
+    font-weight: 400;
+    font-size: 200%;
+    letter-spacing: 2px;
+    /*border: 1px red solid;*/
+  }
+}
