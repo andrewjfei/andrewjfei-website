@@ -2,6 +2,7 @@
 
 .nav-bar-container {
   height: 100px;
+  /*border: 1px solid red;*/
 }
 
 /*
@@ -180,6 +181,10 @@ This class refers to the dot symbol in between the navigation links.
 
   .menu-button {
     margin-top: 3px;
+  }
+
+  .nav-bar-item > a > h3 {
+    font-weight: 500;
   }
 
   .brand-name > h1 {

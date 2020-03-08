@@ -105,12 +105,8 @@
 
 }
 
-/*@media screen and (max-width: 690px) {*/
-/*  .name {*/
-/*    font-size: 100%;*/
-/*  }*/
-
-/*  .country-label {*/
-/*    font-size: 70%;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 550px) {
+  .hover-info {
+    display: none;
+  }
+}

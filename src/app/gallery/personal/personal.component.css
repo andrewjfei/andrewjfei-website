@@ -5,10 +5,12 @@
 .masonry-item {
   width: 20%;
   padding: 10px;
+  user-select: none;
 }
 
 .img-container {
   overflow: hidden;
+  user-select: none;
 }
 
 .masonry-image {

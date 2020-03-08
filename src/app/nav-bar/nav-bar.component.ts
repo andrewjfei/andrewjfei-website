@@ -21,9 +21,13 @@ export class NavBarComponent implements OnInit {
 
   handleMenuButton() {
     this.isMenuOpen = !this.isMenuOpen;
-    this.isMenuOpen ?
-      (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'inline-block' :
+    if (this.isMenuOpen) {
+      (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'inline-block';
+      (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '200px';
+    } else {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
+      (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '100px';
+    }
   }
 
   @HostListener('window:scroll')
@@ -51,7 +55,7 @@ export class NavBarComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
 
-  onResize(event) {
+  onResize() {
     if (this.innerWidth > 1060 && window.innerWidth <= 1060 && this.isMenuOpen === true) {
       this.isMenuOpen = false;
     }
