@@ -32,29 +32,25 @@
 }
 
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */
-@media screen and (max-width: 1385px) {
-  .back-to-top-section label {
-    font-size: 80%;
-  }
-}
+@media screen and (max-width: 1385px) {}
 
-@media screen and (max-width: 690px) {
-  .back-to-top-section label {
-    font-size: 70%;
-    letter-spacing: 1px;
-  }
-}
+/*@media screen and (max-width: 690px) {*/
+/*  .back-to-top-section label {*/
+/*    font-size: 70%;*/
+/*    letter-spacing: 1px;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 550px) {
-  .container {
-    padding: 40px 0px 10px 0px;
-  }
+/*@media screen and (max-width: 550px) {*/
+/*  .container {*/
+/*    padding: 40px 0px 10px 0px;*/
+/*  }*/
 
-  .icon {
-    top: 15px
-  }
+/*  .icon {*/
+/*    top: 15px*/
+/*  }*/
 
-  .back-to-top-section label {
-    font-size: 60%;
-  }
-}
+/*  .back-to-top-section label {*/
+/*    font-size: 60%;*/
+/*  }*/
+/*}*/

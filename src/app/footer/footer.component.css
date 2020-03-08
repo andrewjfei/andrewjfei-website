@@ -74,9 +74,9 @@
 
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */
 @media screen and (max-width: 1385px) {
-  .icon {
-    font-size: 25px;
-  }
+  /*.icon {*/
+  /*  font-size: 25px;*/
+  /*}*/
 }
 
 @media screen and (max-width: 690px) {

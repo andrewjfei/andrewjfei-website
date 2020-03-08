@@ -23,16 +23,16 @@
   }
 }
 
-@media screen and (max-width: 690px) {
-  .about-section {
-    height: 20vh;
-    background-size: 135%;
-    background-position: right bottom;
-  }
-}
+/*@media screen and (max-width: 690px) {*/
+/*  .about-section {*/
+/*    height: 20vh;*/
+/*    background-size: 135%;*/
+/*    background-position: right bottom;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 550px) {
-  .about-section {
-    background-size: 180%;
-  }
-}
+/*@media screen and (max-width: 550px) {*/
+/*  .about-section {*/
+/*    background-size: 180%;*/
+/*  }*/
+/*}*/

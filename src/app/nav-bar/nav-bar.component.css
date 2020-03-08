@@ -133,82 +133,70 @@ This class refers to the dot symbol in between the navigation links.
 
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */
 @media screen and (max-width: 1385px) {
-  .brand-name {
-    margin-top: 8px;
-  }
-
-  .brand-name > h1 {
-    font-size: 150%;
-  }
-
-  .nav-bar-list {
-    margin-top: 5px;
-  }
-
   .nav-bar-item {
     margin: 0px 3px;
   }
 }
 
-@media screen and (max-width: 1060px) {
-  .nav-bar-list {
-    display: none;
-    margin-top: 10px;
-    position: relative;
-    float: left;
-  }
+/*@media screen and (max-width: 1060px) {*/
+/*  .nav-bar-list {*/
+/*    display: none;*/
+/*    margin-top: 10px;*/
+/*    position: relative;*/
+/*    float: left;*/
+/*  }*/
 
-  .nav-bar-item {
-    display: block;
-    text-align: left;
-    padding: 5px 0px;
-  }
+/*  .nav-bar-item {*/
+/*    display: block;*/
+/*    text-align: left;*/
+/*    padding: 5px 0px;*/
+/*  }*/
 
-  .middot {
-    display: none;
-  }
+/*  .middot {*/
+/*    display: none;*/
+/*  }*/
 
-  .menu-button {
-    display: inline-block;
-  }
+/*  .menu-button {*/
+/*    display: inline-block;*/
+/*  }*/
 
-  .brand-name {
-    display: block;
-  }
-}
+/*  .brand-name {*/
+/*    display: block;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 690px) {
-  .menu-button {
-    margin-left: 40px;
-    margin-top: 8px;
-  }
+/*@media screen and (max-width: 690px) {*/
+/*  .menu-button {*/
+/*    margin-left: 40px;*/
+/*    margin-top: 8px;*/
+/*  }*/
 
-  .menu-icon {
-    font-size: 20px;
-  }
+/*  .menu-icon {*/
+/*    font-size: 20px;*/
+/*  }*/
 
-  .brand-name > h1 {
-    font-size: 110%;
-  }
-}
+/*  .brand-name > h1 {*/
+/*    font-size: 110%;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 550px) {
-  .menu-button {
-    margin-left: 20px;
-  }
+/*@media screen and (max-width: 550px) {*/
+/*  .menu-button {*/
+/*    margin-left: 20px;*/
+/*  }*/
 
-  .nav-bar-list {
-    padding-left: 20px;
-    margin-top: 5px;
-  }
+/*  .nav-bar-list {*/
+/*    padding-left: 20px;*/
+/*    margin-top: 5px;*/
+/*  }*/
 
-  .nav-bar-item {
-    display: block;
-    text-align: left;
-    padding: 2px 0px;
-  }
+/*  .nav-bar-item {*/
+/*    display: block;*/
+/*    text-align: left;*/
+/*    padding: 2px 0px;*/
+/*  }*/
 
-  .middot {
-    display: none;
-  }
-}
+/*  .middot {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
