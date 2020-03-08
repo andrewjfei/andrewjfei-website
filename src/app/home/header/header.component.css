@@ -106,38 +106,19 @@
 
   .social-icons-list {
     width: 100px;
-    /*width: 28%;*/
-    /*left: 36%;*/
   }
-
-  /*.icon {*/
-  /*  font-size: 25px;*/
-  /*}*/
 
   .arrow-down-icon {
     display: none !important;
   }
 }
 
-/*@media screen and (max-width: 1060px) {*/
-/*  .background {*/
-/*    background-size: 150%;*/
-/*    background-position: center;*/
-/*  }*/
-
-/*  .hero-text {*/
-/*    margin-bottom: 1.0rem;*/
-/*  }*/
-
-/*  .button-row {*/
-/*    margin-bottom: 1.0rem;*/
-/*  }*/
-
-/*  .social-icons-list {*/
-/*    !*width: 32%;*!*/
-/*    !*left: 34%;*!*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 1060px) {
+  .background {
+    background-size: 150%;
+    background-position: center;
+  }
+}
 
 /*@media screen and (max-width: 690px) {*/
 /*  .hero-text {*/

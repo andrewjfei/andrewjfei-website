@@ -21,3 +21,9 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1060px) {
+  .masonry-item {
+    width: 33.3%;
+  }
+}

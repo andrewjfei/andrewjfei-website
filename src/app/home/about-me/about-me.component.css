@@ -23,6 +23,14 @@
   }
 }
 
+@media screen and (max-width: 1385px) {
+  .about-section {
+    height: 20vh;
+    background-size: 135%;
+    background-position: right bottom;
+  }
+}
+
 /*@media screen and (max-width: 690px) {*/
 /*  .about-section {*/
 /*    height: 20vh;*/

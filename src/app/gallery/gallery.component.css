@@ -12,7 +12,7 @@
 
 .button-container {
   /*border: 1px solid red;*/
-  width: 20%;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -40,5 +40,12 @@
 .selected {
   background-color: #f1f1f1;
   color: #101010;
+}
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .button-container {
+    width: 250px;
+  }
 }
 

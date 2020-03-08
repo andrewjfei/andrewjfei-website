@@ -91,11 +91,19 @@
 /* Media Queries: Tablet Landscape / Small Windowed Web Screen */
 @media screen and (max-width: 1385px) {}
 
-/*@media screen and (max-width: 1060px) {*/
-/*  .grid-container {*/
-/*    grid-template-columns: auto;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 1060px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .hover-info {
+    width: 70%;
+    left: 15%;
+    top: 15%;
+    height: 70%;
+  }
+
+}
 
 /*@media screen and (max-width: 690px) {*/
 /*  .name {*/

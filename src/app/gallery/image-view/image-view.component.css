@@ -60,9 +60,43 @@
 }
 
 .arrow-forward {
-  right: 2rem;
+  right: 2.0rem;
  }
 
 .arrow-back {
-  left: 2rem;
+  left: 2.0rem;
 }
+
+/* Media Queries: Tablet Landscape / Small Windowed Web Screen */
+@media screen and (max-width: 1385px) {
+  .view-container {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .view-container {
+    height: 40%;
+  }
+
+  .image-container {
+    height: 92%;
+  }
+
+  .image {
+    height: 93%;
+  }
+
+  .image-number {
+    height: 7%;
+  }
+
+  .arrow-forward {
+    right: 0.7rem;
+  }
+
+  .arrow-back {
+    left: 0.7rem;
+  }
+}
+

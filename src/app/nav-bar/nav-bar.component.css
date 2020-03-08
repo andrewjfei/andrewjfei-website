@@ -138,32 +138,32 @@ This class refers to the dot symbol in between the navigation links.
   }
 }
 
-/*@media screen and (max-width: 1060px) {*/
-/*  .nav-bar-list {*/
-/*    display: none;*/
-/*    margin-top: 10px;*/
-/*    position: relative;*/
-/*    float: left;*/
-/*  }*/
+@media screen and (max-width: 1060px) {
+  .nav-bar-list {
+    display: none;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+  }
 
-/*  .nav-bar-item {*/
-/*    display: block;*/
-/*    text-align: left;*/
-/*    padding: 5px 0px;*/
-/*  }*/
+  .nav-bar-item {
+    display: block;
+    text-align: left;
+    padding: 3px 0px;
+  }
 
-/*  .middot {*/
-/*    display: none;*/
-/*  }*/
+  .middot {
+    display: none;
+  }
 
-/*  .menu-button {*/
-/*    display: inline-block;*/
-/*  }*/
+  .menu-button {
+    display: inline-block;
+  }
 
-/*  .brand-name {*/
-/*    display: block;*/
-/*  }*/
-/*}*/
+  .brand-name {
+    display: block;
+  }
+}
 
 /*@media screen and (max-width: 690px) {*/
 /*  .menu-button {*/
