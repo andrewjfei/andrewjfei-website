@@ -27,3 +27,14 @@
     width: 33.3%;
   }
 }
+
+@media screen and (max-width: 690px) {
+  .masonry-item {
+    width: 100%;
+  }
+
+  .masonry-image:hover {
+    cursor: default;
+    transform: none;
+  }
+}

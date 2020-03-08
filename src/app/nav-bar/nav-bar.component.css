@@ -165,20 +165,8 @@ This class refers to the dot symbol in between the navigation links.
   }
 }
 
-/*@media screen and (max-width: 690px) {*/
-/*  .menu-button {*/
-/*    margin-left: 40px;*/
-/*    margin-top: 8px;*/
-/*  }*/
-
-/*  .menu-icon {*/
-/*    font-size: 20px;*/
-/*  }*/
-
-/*  .brand-name > h1 {*/
-/*    font-size: 110%;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 690px) {
+}
 
 /*@media screen and (max-width: 550px) {*/
 /*  .menu-button {*/

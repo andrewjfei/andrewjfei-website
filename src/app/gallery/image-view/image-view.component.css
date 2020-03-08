@@ -100,3 +100,9 @@
   }
 }
 
+@media screen and (max-width: 690px) {
+  .background {
+    display: none;
+  }
+}
+
