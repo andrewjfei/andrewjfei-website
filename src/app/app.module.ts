@@ -38,6 +38,7 @@ import { DragDropDirective } from './admin/manage/drag-drop.directive';
 import { UploadFilesComponent } from './admin/manage/upload-files/upload-files.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImageViewComponent } from './gallery/image-view/image-view.component';
+import appRoutes from './routerConfig';
 
 @NgModule({
   declarations: [
@@ -79,16 +80,7 @@ import { ImageViewComponent } from './gallery/image-view/image-view.component';
     FormsModule,
     ReactiveFormsModule,
     NgxMasonryModule,
-    RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: 'store', component: StoreComponent},
-      {path: 'gallery', component: GalleryComponent},
-      {path: 'projects', component: ProjectsComponent},
-      {path: 'about', component: AboutComponent},
-      {path: 'contact', component: ContactComponent},
-      {path: 'admin', component: AdminComponent},
-      {path: '', redirectTo: '/home', pathMatch: 'full'}
-    ]),
+    RouterModule.forRoot(appRoutes),
   ],
   exports: [RouterModule],
   providers: [],
