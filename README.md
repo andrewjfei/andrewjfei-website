@@ -1,6 +1,17 @@
 # Andrew J Fei
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+---
+
+This is an updated version of my personal photography website.
+
+This website was built using Angular version 9.0.
+
+## Contents
+---
+* Getting Started
+
+## Getting Started
+---
 
 ## Development server
 
