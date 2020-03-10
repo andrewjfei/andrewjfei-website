@@ -13,7 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10%;
   /*border: 1px solid red;*/
   position: absolute;
   top: 45%;
@@ -47,13 +46,9 @@ app-footer {
 }
 
 @media screen and (max-width: 690px) {
-  .coming-soon-text {
-    font-size: 150%;
-  }
+
 }
 
 @media screen and (max-width: 550px) {
-  .coming-soon-text {
-    font-size: 120%;
-  }
+
 }
