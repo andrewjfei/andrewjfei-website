@@ -1,9 +1,9 @@
-<div class="nav-bar-container">
+<!--<div class="nav-bar-container">-->
   <nav class="nav-bar" id="navBar" (scroll)="onWindowScroll()">
     <button class="menu-button" (click)="handleMenuButton()">
       <ion-icon class="menu-icon" name="{{isMenuOpen ? 'ios-close' : 'ios-menu'}}"></ion-icon>
     </button>
-    <a class="brand-name" href="home">
+    <a class="brand-name" routerLink="home">
       <h1>ANDREW J FEI</h1>
     </a>
     <ul class="nav-bar-list">
@@ -17,5 +17,5 @@
       </ng-container>
     </ul>
   </nav>
-</div>
+<!--</div>-->
 

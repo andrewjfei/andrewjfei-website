@@ -23,10 +23,10 @@ export class NavBarComponent implements OnInit {
     this.isMenuOpen = !this.isMenuOpen;
     if (this.isMenuOpen) {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'inline-block';
-      (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '200px';
+      // (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '200px';
     } else {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
-      (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '100px';
+      // (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '100px';
     }
   }
 

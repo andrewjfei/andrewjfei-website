@@ -1,9 +1,9 @@
 /* ----------------------------------------- NAV BAR ----------------------------------------- */
 
-.nav-bar-container {
-  height: 100px;
-  /*border: 1px solid red;*/
-}
+/*.nav-bar-container {*/
+/*  height: 100px;*/
+/*  !*border: 1px solid red;*!*/
+/*}*/
 
 /*
 This class makes sure that the title is in the center and that the nav bar has from the top
@@ -11,12 +11,12 @@ of the screen.
 */
 .nav-bar {
   text-align: center;
-  position: relative;
+  position: absolute;
+  width: 100%;
   padding: 30px 0;
   z-index: 10;
   transition: 1.0s ease;
   /*border: 1px solid red;*/
-
 }
 
 /* ----------------------------------------- STICKY NAV BAR ----------------------------------------- */
