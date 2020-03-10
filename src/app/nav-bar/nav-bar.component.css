@@ -48,15 +48,8 @@ Every list item should be inline with margin on both sides.
 */
 .nav-bar-item {
   display: inline-block;
-  opacity: 0.5;
-  transition: 0.5s ease;
   color: #f1f1f1;
   margin: 0px 5px;
-}
-
-.nav-bar-item:hover {
-  opacity: 1.0;
-  cursor: pointer;
 }
 
 .nav-bar-item > a {
@@ -68,6 +61,17 @@ Every list item should be inline with margin on both sides.
   font-size: 100%;
   font-weight: normal;
   letter-spacing: 2px;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.nav-bar-item > a > h3:hover {
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+.selected {
+  opacity: 1.0 !important;
 }
 
 /*

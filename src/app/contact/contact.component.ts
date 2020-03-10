@@ -9,7 +9,8 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    document.getElementById('contact').classList.add('selected');
   }
 
 }

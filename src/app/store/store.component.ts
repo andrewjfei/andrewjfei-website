@@ -10,6 +10,7 @@ export class StoreComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('store').classList.add('selected');
   }
 
 }

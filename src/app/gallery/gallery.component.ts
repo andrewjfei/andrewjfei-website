@@ -10,14 +10,13 @@ export class GalleryComponent implements OnInit {
 
   images = [];
   isPersonalOpen = true;
-  selectedImage;
 
   constructor(private router: Router) {
 
   }
 
   ngOnInit() {
-
+    document.getElementById('gallery').classList.add('selected');
   }
 
   handlePersonalButton() {

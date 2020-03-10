@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -13,9 +14,29 @@ export class FooterComponent implements OnInit {
     {name: 'twitter', url: 'https://www.twitter.com/andrewjfei/'}
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToPage(url) {
+    this.removeSelectedFromNavigationItems();
+
+    this.router.navigate([url]).then( (e) => {
+      if (e) {
+        console.log('Navigation is successful!');
+      } else {
+        console.log('Navigation has failed!');
+      }
+    });
+  }
+
+  removeSelectedFromNavigationItems() {
+    const elements = document.querySelectorAll('.selected');
+
+    elements.forEach(el => {
+      el.classList.remove('selected');
+    });
   }
 
 }

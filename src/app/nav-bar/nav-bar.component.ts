@@ -43,15 +43,15 @@ export class NavBarComponent implements OnInit {
   }
 
   // Currently not being used because routing seems to be able to work with just href param in HTML
-  goToPage(url) {
-    this.router.navigate([url]).then( (e) => {
-      if (e) {
-        console.log('Navigation is successful!');
-      } else {
-        console.log('Navigation has failed!');
-      }
-    });
-  }
+  // goToPage(url) {
+  //   this.router.navigate([url]).then( (e) => {
+  //     if (e) {
+  //       console.log('Navigation is successful!');
+  //     } else {
+  //       console.log('Navigation has failed!');
+  //     }
+  //   });
+  // }
 
   @HostListener('window:resize', ['$event'])
 
@@ -66,6 +66,16 @@ export class NavBarComponent implements OnInit {
     } else if (window.innerWidth <= 1060 && this.innerWidth > 1060) {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
       this.innerWidth = window.innerWidth;
+    }
+  }
+
+  removeSelectedFromNavigationItems(event) {
+    if (!event.target.classList.contains('selected')) {
+      const elements = document.querySelectorAll('.selected');
+
+      elements.forEach(el => {
+        el.classList.remove('selected');
+      });
     }
   }
 
