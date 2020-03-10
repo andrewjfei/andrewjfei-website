@@ -23,9 +23,11 @@ export class NavBarComponent implements OnInit {
     this.isMenuOpen = !this.isMenuOpen;
     if (this.isMenuOpen) {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'inline-block';
+      (document.querySelector('.nav-bar-list-container') as HTMLElement).classList.add('nav-bar-open');
       // (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '200px';
     } else {
       (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
+      (document.querySelector('.nav-bar-list-container') as HTMLElement).classList.remove('nav-bar-open');
       // (document.querySelector('.nav-bar-container') as HTMLElement).style.height = '100px';
     }
   }
@@ -77,6 +79,15 @@ export class NavBarComponent implements OnInit {
         el.classList.remove('selected');
       });
     }
+
+    this.handleSmallScreenNavBarSelection()
+
+  }
+
+  handleSmallScreenNavBarSelection() {
+    this.isMenuOpen = false;
+    (document.querySelector('.nav-bar-list') as HTMLElement).style.display = 'none';
+    (document.querySelector('.nav-bar-list-container') as HTMLElement).classList.remove('nav-bar-open');
   }
 
 }

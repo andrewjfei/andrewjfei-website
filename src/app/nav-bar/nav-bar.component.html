@@ -6,16 +6,18 @@
     <a class="brand-name" routerLink="home" (click)="removeSelectedFromNavigationItems($event)">
       <h1>ANDREW J FEI</h1>
     </a>
-    <ul class="nav-bar-list">
-      <ng-container *ngFor="let item of navBarItems; let i = index">
-        <li class="nav-bar-item link">
-          <a routerLink="{{item}}" (click)="removeSelectedFromNavigationItems($event)">
-            <h3 id="{{item}}">{{item.toUpperCase()}}</h3>
-          </a>
-        </li>
-        <li class="nav-bar-item middot" *ngIf="i < navBarItems.length - 1">&middot;</li>
-      </ng-container>
-    </ul>
+    <div class="nav-bar-list-container">
+      <ul class="nav-bar-list">
+        <ng-container *ngFor="let item of navBarItems; let i = index">
+          <li class="nav-bar-item link">
+            <a routerLink="{{item}}" (click)="removeSelectedFromNavigationItems($event)">
+              <h3 id="{{item}}">{{item.toUpperCase()}}</h3>
+            </a>
+          </li>
+          <li class="nav-bar-item middot" *ngIf="i < navBarItems.length - 1">&middot;</li>
+        </ng-container>
+      </ul>
+    </div>
   </nav>
 <!--</div>-->
 
