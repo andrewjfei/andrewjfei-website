@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {trigger, style, animate, transition} from '@angular/animations';
+import {NgxMasonryComponent} from 'ngx-masonry';
 
 @Component({
   selector: 'app-personal',
@@ -31,7 +32,7 @@ export class PersonalComponent implements OnInit {
 
   getPersonalImages() {
     this.http.get('https://storage.googleapis.com/storage/v1/b/andrewjfei-gallery-personal/o').subscribe((data: any) => {
-      console.log(data.items);
+      // console.log(data.items);
       data.items.map(obj => {
         this.images.push(obj);
       });

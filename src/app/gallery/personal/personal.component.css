@@ -17,12 +17,18 @@
   width: 100%;
   transition: 0.5s ease;
   user-select: none;
+  /*animation: fadein 2.0s;*/
 }
 
 .masonry-image:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+/*@keyframes fadein {*/
+/*  from { opacity: 0; }*/
+/*  to   { opacity: 1; }*/
+/*}*/
 
 @media screen and (max-width: 1060px) {
   .masonry-item {

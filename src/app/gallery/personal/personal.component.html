@@ -3,7 +3,9 @@
   [useImagesLoaded]="true"
   [options]="{
   transitionDuration: '0.8s',
-  horizontalOrder: 'true'
+  horizontalOrder: 'true',
+  originTop: 'true',
+  initLayout: 'true'
   }"
 >
   <div ngxMasonryItem class="masonry-item" *ngFor="let image of images, let i = index">

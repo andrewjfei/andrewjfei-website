@@ -21,7 +21,7 @@ export class EventsComponent implements OnInit {
 
   getEventImages() {
     this.http.get('https://storage.googleapis.com/storage/v1/b/andrewjfei-gallery-events/o').subscribe((data: any) => {
-      console.log(data.items);
+      // console.log(data.items);
       data.items.map(obj => {
         this.images.push(obj);
       });
