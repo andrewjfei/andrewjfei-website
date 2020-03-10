@@ -1,17 +1,18 @@
 # Andrew J Fei
 
----
-
 This is an updated version of my personal photography website.
 
 This website was built using Angular version 9.0.
 
-## Contents
----
-* Getting Started
+Functionality
 
+* **Dynamic Front-End**: Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket.
+
+## Contents
+- [Header](#getting-started)
+
+<a name="getting-started"></a>
 ## Getting Started
----
 
 ## Development server
 
