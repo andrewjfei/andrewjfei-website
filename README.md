@@ -42,10 +42,10 @@ Once you have cloned the repository, change directory into the cloned repository
 All website functionalities will be described in detail and how they are achieved/implemented.
 
 <a name="responsive-website"></a>
-### Responsive Website
+### Responsive Website 📱
 
 <a name="dynamic-front-end"></a>
-### Dynamic Front-End
+### Dynamic Front-End 🎇
 
 <a name="future-implementations"></a>
 ## Future Implementations
@@ -53,12 +53,12 @@ All website functionalities will be described in detail and how they are achieve
 Not all the functionalty of the website have currently been implemented due to some limitations and contraints. However, these functions will be worked on in the furture to achieve the end goal and vision of the website.
 
 <a name="analytics"></a>
-### Analytics
+### Analytics 📈
 
 <a name="automated-emails"></a>
-### Automated Emails
+### Automated Emails ✉️
 
 <a name="store-service"></a>
-### Store Service
+### Store Service 👕
 
 ## License
