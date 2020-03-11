@@ -95,6 +95,3 @@ The Gmail API would be used to achieve this functionality.
 I have a vision to sell clothing with my photographs printed on them. In order to sell products, I would need to have a platform and system for managing all the products.
 
 A third party system would be used to achieve this, such as Shopify.
-
-
-## License
