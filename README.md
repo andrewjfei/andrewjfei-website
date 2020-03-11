@@ -54,11 +54,11 @@ Below are examples of the website views on different screen sizes.
 
 **Website View**
 
-<img src="./website-view.png" height="300">
+<img src="./website-view.png" height="500">
 
 **Mobile View**
 
-<img src="./mobile-view.png" height="300">
+<img src="./mobile-view.png" height="500">
 
 This functionality was achieved by using _Media Queries_ in CSS.
 
