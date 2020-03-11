@@ -10,8 +10,9 @@ This website was built using Angular version 9.0.
 
 **Website Functionality**
 
-* **Responsive**: Website is accessible from all devices, where elements on the screen change depending on the screen size.
+* [**Responsive**](#reponsive-website): Website is accessible from all devices, where elements on the screen change depending on the screen size.
 * **Dynamic Front-End**: Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket.
+* **Analytics**: Not currently implemented.
 * **Automated Emails**: Not currently implemented.
 * **Store Service**: Not currently implemented
 
@@ -38,9 +39,26 @@ Once you have cloned the repository, change directory into the cloned repository
 <a name="functionality"></a>
 ## Functionality
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+All website functionalities will be described in detail and how they are achieved/implemented.
+
+<a name="responsive-website"></a>
+### Responsive Website
+
+<a name="dynamic-front-end"></a>
+### Dynamic Front-End
 
 <a name="future-implementations"></a>
 ## Future Implementations
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Not all the functionalty of the website have currently been implemented due to some limitations and contraints. However, these functions will be worked on in the furture to achieve the end goal and vision of the website.
+
+<a name="analytics"></a>
+### Analytics
+
+<a name="automated-emails"></a>
+### Automated Emails
+
+<a name="store-service"></a>
+### Store Service
+
+## License
