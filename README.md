@@ -14,8 +14,7 @@ The website is currently being hosted on github pages.
 
 **NOTE: Images on the website are placeholders until the website is offically complete and ready for launch.**
 
-**Website Functionality**
----
+## Website Functionality
 * 📱[**Responsive**](#responsive-website): Website is accessible from all devices, where elements on the screen change depending on the screen size.
 * 🎇[**Dynamic Front-End**](#dynamic-front-end): Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket.
 * 📈[**Analytics**](#analytics): Not currently implemented.
@@ -55,11 +54,11 @@ This functionaly allows the elements within the website to change depending on t
 Below are examples of the website views on different screen sizes.
 
 **Website View**
----
+
 <img src="./website-view.png" height="500">
 
 **Mobile View**
----
+
 <img src="./mobile-view.png" height="500">
 
 The responsiveness of the website was achieved by using _Media Queries_ in CSS.
@@ -81,10 +80,18 @@ Not all the functionalty of the website have currently been implemented due to s
 <a name="analytics"></a>
 ### Analytics 📈
 
+Being able to understand where your website traffic is coming from is extremely useful and important. To achieve and obtain these analtics, Google Analytics will be used and implemented.
+
 <a name="automated-emails"></a>
 ### Automated Emails ✉️
 
+The main purpose of this website was to showcase my photography work to potentially attract potential customers. If customers are happy with what they see they will need some way of being able to contact me. The solution to this would be to allow users to complete a contact form in which on sumbitting would automate an email to my personal email address.
+
+The Gmail API would be used to achieve this functionality.
+
 <a name="store-service"></a>
 ### Store Service 👕
+
+
 
 ## License
