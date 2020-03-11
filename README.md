@@ -10,11 +10,11 @@ This website was built using Angular version 9.0.
 
 **Website Functionality**
 
-* [**Responsive**](#responsive-website): Website is accessible from all devices, where elements on the screen change depending on the screen size.
-* [**Dynamic Front-End**](#dynamic-front-end): Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket.
-* [**Analytics**](#analytics): Not currently implemented.
-* [**Automated Emails**](#automated-emails): ✉️ Not currently implemented.
-* [**Store Service**](#store-service): Not currently implemented
+* [**Responsive**](#responsive-website): Website is accessible from all devices, where elements on the screen change depending on the screen size. 📱
+* [**Dynamic Front-End**](#dynamic-front-end): Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket. 🎇
+* [**Analytics**](#analytics): Not currently implemented. 📈
+* [**Automated Emails**](#automated-emails): Not currently implemented. ✉️
+* [**Store Service**](#store-service): Not currently implemented. 👕
 
 ## Contents
 - [Getting Started](#getting-started)
