@@ -13,8 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10%;
-  /*border: 1px solid red;*/
+  /*height: 10%;*/
+  border: 1px solid red;
   position: absolute;
   top: 45%;
   left: 15%;
