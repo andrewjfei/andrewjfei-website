@@ -80,7 +80,9 @@ export class NavBarComponent implements OnInit {
       });
     }
 
-    this.handleSmallScreenNavBarSelection()
+    if (this.innerWidth < 1060) {
+      this.handleSmallScreenNavBarSelection()
+    }
 
   }
 
