@@ -12,8 +12,10 @@ Website Link: https://andrewjfei.com/
 
 The website is currently being hosted on github pages.
 
-**Website Functionality**
+**NOTE: Images on the website are placeholders until the website is offically complete and ready for launch.**
 
+**Website Functionality**
+---
 * 📱[**Responsive**](#responsive-website): Website is accessible from all devices, where elements on the screen change depending on the screen size.
 * 🎇[**Dynamic Front-End**](#dynamic-front-end): Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket.
 * 📈[**Analytics**](#analytics): Not currently implemented.
@@ -60,7 +62,7 @@ Below are examples of the website views on different screen sizes.
 ---
 <img src="./mobile-view.png" height="500">
 
-This functionality was achieved by using _Media Queries_ in CSS.
+The responsiveness of the website was achieved by using _Media Queries_ in CSS.
 
 <a name="dynamic-front-end"></a>
 ### Dynamic Front-End 🎇
