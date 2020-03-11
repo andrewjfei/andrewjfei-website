@@ -11,7 +11,7 @@ export class FavouritesComponent implements OnInit {
   favourites = [];
 
   constructor(private router: Router) {
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 6; i++) {
 
       this.favourites.push({name: 'Mercer Bay Loop', country: 'New Zealand', url: '../../assets/images/mercer-bay-loop.jpg'});
 
