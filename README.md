@@ -53,10 +53,12 @@ This functionaly allows the elements within the website to change depending on t
 Below are examples of the website views on different screen sizes.
 
 **Website View**
-<img src="./wesbite-view.png" height="100">
+
+<img src="./website-view.png" height="300">
 
 **Mobile View**
-<img src="./mobile-view.png" height="100">
+
+<img src="./mobile-view.png" height="300">
 
 This functionality was achieved by using _Media Queries_ in CSS.
 
