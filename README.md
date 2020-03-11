@@ -16,11 +16,17 @@ This website was built using Angular version 9.0.
 <a name="getting-started"></a>
 ## Getting Started
 
-### Downloading the Repository
+### Cloning the Repository
+
+Make sure you have `git` installed. For more information visit https://git-scm.com/ for more information.
+
+Open up terminal on your local device. Navigate to a directory where you want the repository to be cloned to, by using the `cd` command. Run `git clone https://github.com/andrewjfei/andrewjfei-website.git` to clone this repository to your desired destination.
 
 ### Running Locally
 
-Navigate to the project directory. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Once you have cloned the repository, change directory into the cloned repository by running `cd andrewjfei-website`. Then run `ng serve` to start up a development server. Open up a browser and then navigate to `http://localhost:4200/`, the app should be loaded. 
+
+**The app will automatically reload if you change any of the source files.**
 
 <a name="functionality"></a>
 ## Functionality
