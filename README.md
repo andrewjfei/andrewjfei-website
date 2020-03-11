@@ -1,12 +1,19 @@
 # Andrew J Fei
 
-This is an updated version of my personal photography website.
+This is a project aimed towards creating a photography website.
+
+The end goal for this project is to eventually be able to start up a freelancing photography business.
+
+I have found a passion for photography over the years, and decided that it would be a good idea to start a buisness doing photography. Currently, studying software engineering it only made sense for me to try add create my own photography website from scratch rather than using third parties such as Wix, SquareSpace, etc.
 
 This website was built using Angular version 9.0.
 
-**Functionality**
+**Website Functionality**
 
+* **Responsive**: Website is accessible from all devices, where elements on the screen change depending on the screen size.
 * **Dynamic Front-End**: Images in the gallery can be changed dynamically by adding/removing images from the respective Google Cloud Storage bucket.
+* **Automated Emails**: Not currently implemented.
+* **Store Service**: Not currently implemented
 
 ## Contents
 - [Getting Started](#getting-started)
@@ -18,7 +25,7 @@ This website was built using Angular version 9.0.
 
 ### Cloning the Repository
 
-Make sure you have `git` installed. For more information visit https://git-scm.com/ for more information.
+Make sure you have `git` installed. Visit https://git-scm.com/ for more information.
 
 Open up terminal on your local device. Navigate to a directory where you want the repository to be cloned to, by using the `cd` command. Run `git clone https://github.com/andrewjfei/andrewjfei-website.git` to clone this repository to your desired destination.
 
